@@ -14,12 +14,11 @@ import { useNavigate } from "react-router-dom";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import ImageIcon from "@mui/icons-material/Image";
 
-export default function Question() {
+export default function Answer() {
   const navigate = useNavigate();
-
-  const submit = () => {
+  const next = () => {
     // this.props.history.push('/userlist')
-    navigate("/answer");
+    alert("submitted");
   };
 
   const time = new Date();
@@ -50,27 +49,6 @@ export default function Question() {
                 columnSpacing={{ xs: 1, sm: 2, md: 3 }}
               >
                 <Grid item xs={12} sm={12}>
-                  <Box
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                    <CountdownCircleTimer
-                      isPlaying
-                      size={60}
-                      strokeWidth={4}
-                      duration={10}
-                      colors={["#004777", "#F7B801", "#A30000", "#A30000"]}
-                      colorsTime={[7, 5, 2, 0]}
-                    >
-                      {({ remainingTime }) => remainingTime}
-                    </CountdownCircleTimer>
-                  </Box>
-                </Grid>
-
-                <Grid item xs={12} sm={12}>
                   <Typography
                     gutterBottom
                     variant="h5"
@@ -80,17 +58,31 @@ export default function Question() {
                     Question 1 of 10
                   </Typography>
                 </Grid>
+              </Grid>
 
-                {/* <Grid item xs={12} sm={4}>
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="div"
-                sx={{ mb: 1, mt: 1 }}
+              <Grid
+                container
+                rowSpacing={1}
+                columnSpacing={{ xs: 1, sm: 2, md: 3 }}
               >
-                Score: 0
-              </Typography>
-              </Grid> */}
+                <Grid item xs={12} md={6}>
+                  <Button
+                    variant="outlined"
+                    size="large"
+                    sx={{ minWidth: 200, color: "black", borderColor: "black" }}
+                  >
+                    a: Vestibulum
+                  </Button>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                  <Button
+                    variant="outlined"
+                    size="large"
+                    sx={{ minWidth: 200, color: "black", borderColor: "black" }}
+                  >
+                    b: Accumsan{" "}
+                  </Button>
+                </Grid>
               </Grid>
 
               <CardMedia
@@ -107,50 +99,6 @@ export default function Question() {
                 justo neque. Aliquam ut luctus mauris. Ut nisl magna, ultricies
                 quis libero in, aliquam sodales eros.
               </Typography>
-
-              <Grid
-                container
-                rowSpacing={1}
-                columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-              >
-                <Grid item xs={12} md={6}>
-                  <Button
-                    variant="outlined"
-                    size="large"
-                    sx={{ minWidth: 200, color: "black", borderColor: "black" }}
-                    onClick={submit}
-                  >
-                    a: Vestibulum
-                  </Button>
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <Button
-                    variant="outlined"
-                    size="large"
-                    sx={{ minWidth: 200, color: "black", borderColor: "black" }}
-                  >
-                    b: Accumsan{" "}
-                  </Button>
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <Button
-                    variant="outlined"
-                    size="large"
-                    sx={{ minWidth: 200, color: "black", borderColor: "black" }}
-                  >
-                    c: Arcu{" "}
-                  </Button>
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <Button
-                    variant="outlined"
-                    size="large"
-                    sx={{ minWidth: 200, color: "black", borderColor: "black" }}
-                  >
-                    d: Quisquam{" "}
-                  </Button>
-                </Grid>
-              </Grid>
             </CardContent>
           </Card>
         </Box>
