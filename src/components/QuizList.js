@@ -10,12 +10,15 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { CardActionArea } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import quizzes from "../data/quizzes.json";
+import quizzes from "#data/quizzes.json";
+import { useQuizContext } from '#contexts/QuizContext';
 
 export default function QuizList() {
+  const { state, dispatch } = useQuizContext();
   const navigate = useNavigate();
   const startTheQuiz = (quiz) => {
-    navigate("/quiz", {state: {quiz: quiz}});
+    dispatch({ type: 'START_THE_QUIZ', payload: {quiz:quiz} });
+    navigate("/quiz");
   };
 
   console.log(quizzes);

@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import QuizList from "./pages/QuizList";
-import Quiz from "./pages/quiz/Quiz";
-import Question from "./pages/Question";
-import Answer from "./pages/Answer";
+import Home from "#components/Home";
+import QuizList from "#components/QuizList";
+import Quiz from "#components/quiz/Quiz";
+// import Question from "./pages/Question";
+import Answer from "#components/Answer";
 
 function App() {
   return (

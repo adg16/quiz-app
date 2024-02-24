@@ -13,13 +13,12 @@ import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import ImageIcon from "@mui/icons-material/Image";
+import { useQuizContext } from '#contexts/QuizContext';
 
-export default function Question(question, totalQuestions, totalQuestionsAnswered) {
+
+export default function Question() {
+  const { state, dispatch } = useQuizContext();
   const navigate = useNavigate();
-
-  console.log(' Question question', question);
-  console.log(' Question totalQuestions', totalQuestions);
-  console.log(' Question totalQuestionsAnswered', totalQuestionsAnswered);
 
   const submit = () => {
     // this.props.history.push('/userlist')
@@ -57,36 +56,21 @@ export default function Question(question, totalQuestions, totalQuestionsAnswere
             component="div"
             sx={{ mb: 1, mt: 1 }}
           >
-            Question {totalQuestionsAnswered} of {totalQuestions}
-
+            Question {state.currentQuestionIndex + 1} of {state.totalQuestions}
           </Typography>
         </Grid>
-
-        {/* <Grid item xs={12} sm={4}>
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="div"
-                sx={{ mb: 1, mt: 1 }}
-              >
-                Score: 0
-              </Typography>
-              </Grid> */}
       </Grid>
 
       <CardMedia
         component="img"
         height="200"
-        image="/images/placeholder_600x200.png"
+        image={state.currentQuestion.image}
         alt="green iguana"
         sx={{ mt: 2, mb: 2, objectFit: "contain" }}
       />
 
       <Typography variant="body2" sx={{ mb: 4 }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet
-        sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque.
-        Aliquam ut luctus mauris. Ut nisl magna, ultricies quis libero in,
-        aliquam sodales eros.
+        {state.currentQuestion.question}
       </Typography>
 
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
