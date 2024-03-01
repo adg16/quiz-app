@@ -2,35 +2,35 @@
     {
       "id": 1,
       "title": "Quiz Number One",
-      "description": "Quiz number one description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque. Aliquam ut luctus mauris. Ut nisl magna, ultricies quis libero in, aliquam sodales eros.",
+      "description": "Quiz number one description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque. Aliquam ut luctus mauris. Ut nisl magna, ultricies quis libero in, aliquam sodales eros. Q1-1.",
       "questions": [
         {
           "id": 1,
-          "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque?",
+          "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque Q1-1?",
           "image": "/images/placeholder_600x200.png",
           "correctAnswer": "a",
-          "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.",
+          "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque. Q1-1.",
           "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
-          "choices": {
-            "a": "Aliquet",
-            "b": "Tincidunt",
-            "c": "Justo",
-            "d": "Sodales"
-          }
+          "choices" : [
+            {"id": "a", "value":"Aliquet"},
+            {"id": "b", "value":"Tincidunt"},
+            {"id": "c", "value":"Justo"},
+            {"id": "d", "value":"Sodales"}
+          ]
         },
         {
           "id": 2,
-          "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque?",
+          "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque? Q1-2",
           "image": "/images/placeholder_600x200.png",
           "correctAnswer": "a",
-          "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.",
+          "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.Q1-2",
           "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
-          "choices": {
-            "a": "Aliquet",
-            "b": "Tincidunt",
-            "c": "Justo",
-            "d": "Sodales"
-          }
+          "choices" : [
+            {"id": "a", "value":"Aliquet"},
+            {"id": "b", "value":"Tincidunt"},
+            {"id": "c", "value":"Justo"},
+            {"id": "d", "value":"Sodales"}
+          ]
         }
       ]
     },
@@ -41,31 +41,31 @@
       "questions": [
         {
           "id": 1,
-          "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque?",
+          "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque? Q2-1",
           "image": "/images/placeholder_600x200.png",
           "correctAnswer": "a",
-          "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.",
+          "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.Q2-1",
           "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
-          "choices": {
-            "a": "Aliquet",
-            "b": "Tincidunt",
-            "c": "Justo",
-            "d": "Sodales"
-          }
+          "choices" : [
+            {"id": "a", "value":"Aliquet"},
+            {"id": "b", "value":"Tincidunt"},
+            {"id": "c", "value":"Justo"},
+            {"id": "d", "value":"Sodales"}
+          ]
         },
         {
           "id": 2,
-          "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque?",
+          "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque?Q2-2",
           "image": "/images/placeholder_600x200.png",
           "correctAnswer": "a",
-          "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.",
+          "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.Q2-2",
           "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
-          "choices": {
-            "a": "Aliquet",
-            "b": "Tincidunt",
-            "c": "Justo",
-            "d": "Sodales"
-          }
+          "choices" : [
+            {"id": "a", "value":"Aliquet"},
+            {"id": "b", "value":"Tincidunt"},
+            {"id": "c", "value":"Justo"},
+            {"id": "d", "value":"Sodales"}
+          ]
         }
       ]
     },
@@ -81,12 +81,12 @@
           "correctAnswer": "a",
           "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.",
           "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
-          "choices": {
-            "a": "Aliquet",
-            "b": "Tincidunt",
-            "c": "Justo",
-            "d": "Sodales"
-          }
+          "choices" : [
+            {"id": "a", "value":"Aliquet"},
+            {"id": "b", "value":"Tincidunt"},
+            {"id": "c", "value":"Justo"},
+            {"id": "d", "value":"Sodales"}
+          ]
         },
         {
           "id": 2,
@@ -95,12 +95,12 @@
           "correctAnswer": "a",
           "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.",
           "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
-          "choices": {
-            "a": "Aliquet",
-            "b": "Tincidunt",
-            "c": "Justo",
-            "d": "Sodales"
-          }
+          "choices" : [
+            {"id": "a", "value":"Aliquet"},
+            {"id": "b", "value":"Tincidunt"},
+            {"id": "c", "value":"Justo"},
+            {"id": "d", "value":"Sodales"}
+          ]
         }
       ]
     },
@@ -116,12 +116,12 @@
           "correctAnswer": "a",
           "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.",
           "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
-          "choices": {
-            "a": "Aliquet",
-            "b": "Tincidunt",
-            "c": "Justo",
-            "d": "Sodales"
-          }
+          "choices" : [
+            {"id": "a", "value":"Aliquet"},
+            {"id": "b", "value":"Tincidunt"},
+            {"id": "c", "value":"Justo"},
+            {"id": "d", "value":"Sodales"}
+          ]
         },
         {
           "id": 2,
@@ -130,12 +130,12 @@
           "correctAnswer": "a",
           "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.",
           "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
-          "choices": {
-            "a": "Aliquet",
-            "b": "Tincidunt",
-            "c": "Justo",
-            "d": "Sodales"
-          }
+          "choices" : [
+            {"id": "a", "value":"Aliquet"},
+            {"id": "b", "value":"Tincidunt"},
+            {"id": "c", "value":"Justo"},
+            {"id": "d", "value":"Sodales"}
+          ]
         }
       ]
     }

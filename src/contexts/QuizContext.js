@@ -1,4 +1,3 @@
-import { ConnectingAirportsOutlined } from "@mui/icons-material";
 import * as React from "react";
 import { createContext, useContext, useReducer } from "react";
 
@@ -13,12 +12,18 @@ const initialState = {
   currentQuestion: {},
   totalAnsweredQuestions: 0,
   totalCorrectAnswers: 0,
+  currentSubmittedAnswer: null,
+  answerSubmitted: false,
 };
 
 // Define the reducer function to handle state transitions
 const reducer = (state, action) => {
     console.log(action);
   switch (action.type) {
+    case "RESET_THE_QUIZ":
+      return {
+        ...initialState
+      };
     case "START_THE_QUIZ":
       return {
         ...state,
@@ -44,15 +49,18 @@ const reducer = (state, action) => {
 
       return {
         ...state,
+        answerSubmitted: true,
+        currentSubmittedAnswer: action.payload.sumbmittedAnswer,
         totalAnsweredQuestions: state.totalAnsweredQuestions + 1,
         totalCorrectAnswers: totalCorrectAnswers(),
       };
     case "MOVE_TO_THE_NEXT_QUESTION":
       return {
         ...state,
+        answerSubmitted: false,
+        currentSubmittedAnswer: null,
         currentQuestionIndex: state.currentQuestionIndex + 1,
-        currentQuestion:
-          action.payload.currentQuiz.questions[state.currentQuestionIndex + 1],
+        currentQuestion: state.currentQuiz.questions[state.currentQuestionIndex + 1],
       };
     default:
       return state;

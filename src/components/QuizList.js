@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect, useState } from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
@@ -20,6 +21,10 @@ export default function QuizList() {
     dispatch({ type: 'START_THE_QUIZ', payload: {quiz:quiz} });
     navigate("/quiz");
   };
+
+  useEffect(() => {
+    dispatch({ type: 'RESET_THE_QUIZ' });
+  }, []);
 
   console.log(quizzes);
 

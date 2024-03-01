@@ -16,62 +16,23 @@ import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import ImageIcon from "@mui/icons-material/Image";
 import { useQuizContext } from '#contexts/QuizContext';
 import Question from "./Question";
+import Answer from "./Answer";
+
 
 export default function Quiz() {
   const { state, dispatch } = useQuizContext();
   const navigate = useNavigate();
-  // const { state } = useLocation();
-  // const [currentQuiz, setCurrentQuiz] = useState({});
-  // const [totalQuestions, setTotalQuestions] = useState(0);
-  // const [totalQuestionsAnswered, setTotalQuestionsAnswered] = useState(0);
-  // const [currentQuestionId, setCurrentQuestionId] = useState(0);
-  // const [currentQuestion, setCurrentQuestion] = useState({});
-  // const { userAnswers, setUserAnswers } = useState({});
-
-  //TODO: pass state to Question
-
-  // useEffect(() => {
-  //   if (state === null) {
-  //     navigate("/quizzes");
-  //   } else {
-  //     const { quiz } = state;
-  //     setCurrentQuiz(quiz);
-  //     // setTotalQuestions(Object.keys(quiz.questions).length);
-  //     setTotalQuestions(1);
-
-  //     console.log("quiz.questions", quiz.questions);
-  //     setCurrentQuestionId(1);
-  //     setCurrentQuestion(findQuestionById(1, quiz));
-  //     setTotalQuestionsAnswered(1);
-  //   }
-  // }, []);
-
-  //   useEffect(() => {
-  //     setCurrentQuestion(findQuestionById(currentQuestionId));
-  //   }, [currentQuestionId]);
-
-  // if (state === null) {
-  //   return null;
-  // }
-
-  // / const { quiz } = state;
-
-  // console.log("currentQuiz", currentQuiz);
-
-  // const findQuestionById = (questionId, quiz) => {
-  //   for (const question of quiz.questions) {
-  //     if (question.id === questionId) {
-  //       return question;
-  //     }
-  //   }
-  //   return null; // Question not found
-  // };
-
   const submit = () => {
     // navigate("/answer");
   };
 
-  console.log(state);
+ 
+  useEffect(() => {
+    if (Object.keys(state.currentQuiz).length === 0) {
+      navigate("/quizzes");
+    }
+    console.log('QUIZ STATE', state);
+  }, []);
 
   return (
     <React.Fragment>
@@ -92,7 +53,7 @@ export default function Quiz() {
             }}
           >
             <CardContent>
-              <Question/>
+              <Question />
             </CardContent>
           </Card>
         </Box>
