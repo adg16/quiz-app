@@ -37,9 +37,9 @@ export default function Quiz() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth={false} sx={{ bgcolor: "#fff" }}>
+      <Container maxWidth={false} sx={{ bgcolor: "#FFF9C4" }}>
         <Box sx={{ textAlign: "center", paddingTop: 2, paddingBottom: 2 }}>
-          <Typography variant="h2">{state.currentQuiz.title}</Typography>
+          <Typography variant="h5">{state.currentQuiz.title}</Typography>
         </Box>
         <Box sx={{ textAlign: "center", paddingBottom: 5 }}>
           <Card
@@ -49,7 +49,9 @@ export default function Quiz() {
               maxWidth: 800,
               ml: "auto",
               mb: 3,
-              p: 2,
+              pl: "16px",
+              pr: "16px",
+              pt: "10px",
             }}
           >
             <CardContent>

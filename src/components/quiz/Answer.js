@@ -15,6 +15,7 @@ import { useNavigate } from "react-router-dom";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import ImageIcon from "@mui/icons-material/Image";
 import { useQuizContext } from "#contexts/QuizContext";
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import Divider from "@mui/material/Divider";
 
 // export default function Answer() {
@@ -35,7 +36,7 @@ const Answer = React.forwardRef(function (props, ref) {
 
   return (
     <div ref={ref} {...props}>
-      <Divider sx={{marginTop: '20px'}}/>
+      <Divider sx={{mt: '28px', mb: '25px'}}><TipsAndUpdatesIcon sx={{color:"#FFD700", fontSize: '30px'}}/></Divider>
       <CardMedia
         component="img"
         height="200"

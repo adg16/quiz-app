@@ -31,7 +31,7 @@ export default function QuizList() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth={false} sx={{ bgcolor: "#fff" }}>
+      <Container maxWidth={false} sx={{ bgcolor: "#FFF9C4" }}>
         <Box sx={{ textAlign: "center", paddingTop: 5, paddingBottom: 5 }}>
           <Typography variant="h2">Available Quizzes</Typography>
         </Box>
