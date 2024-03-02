@@ -17,6 +17,7 @@ import ImageIcon from "@mui/icons-material/Image";
 import { useQuizContext } from '#contexts/QuizContext';
 import Question from "./Question";
 import Answer from "./Answer";
+import Result from "./Result";
 
 
 export default function Quiz() {
@@ -32,7 +33,7 @@ export default function Quiz() {
       navigate("/quizzes");
     }
     console.log('QUIZ STATE', state);
-  }, []);
+  }, [state]);
 
   return (
     <React.Fragment>
@@ -55,7 +56,11 @@ export default function Quiz() {
             }}
           >
             <CardContent>
-              <Question />
+              {
+                !state.answerSubmitted && state.totalAnsweredQuestions === state.totalQuestions ?
+                <Result/> : <Question />
+              }
+              {/* <Question /> */}
             </CardContent>
           </Card>
         </Box>

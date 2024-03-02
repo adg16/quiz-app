@@ -14,6 +14,8 @@ const initialState = {
   totalCorrectAnswers: 0,
   currentSubmittedAnswer: null,
   answerSubmitted: false,
+  congratulate: false,
+  submittedAnswers: []
 };
 
 // Define the reducer function to handle state transitions
@@ -35,6 +37,13 @@ const reducer = (state, action) => {
         totalAnsweredQuestions: state.totalAnsweredQuestions,
         totalCorrectAnswers: state.totalCorrectAnswers,
       };
+    case "RETAKE_THE_QUIZ":
+        return {
+          ...initialState,
+          currentQuiz: state.currentQuiz,
+          totalQuestions: state.currentQuiz.questions.length,
+          currentQuestion: state.currentQuiz.questions[state.currentQuestionIndex],
+        };
     case "SUBMIT_THE_ANSWER":
       const totalCorrectAnswers = () => {
         if (
@@ -49,6 +58,7 @@ const reducer = (state, action) => {
 
       return {
         ...state,
+        submittedAnswers: [...state.submittedAnswers, {questionIndex:state.currentQuestionIndex, answer:action.payload.sumbmittedAnswer}],
         answerSubmitted: true,
         currentSubmittedAnswer: action.payload.sumbmittedAnswer,
         totalAnsweredQuestions: state.totalAnsweredQuestions + 1,
@@ -62,6 +72,17 @@ const reducer = (state, action) => {
         currentQuestionIndex: state.currentQuestionIndex + 1,
         currentQuestion: state.currentQuiz.questions[state.currentQuestionIndex + 1],
       };
+    case "VIEW_FINAL_SCORE":
+        return {
+          ...state,
+          answerSubmitted: false,
+          currentSubmittedAnswer: null,
+        };
+    case "CONGRATULATE":
+          return {
+            ...state,
+            congratulate: true,
+          };
     default:
       return state;
   }
