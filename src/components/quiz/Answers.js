@@ -33,7 +33,7 @@ const Answers = () => {
           );
           return (
             <Box key={questionIndex}>
-              <Divider sx={{ mt: "28px", mb: "25px" }} textAlign="left">
+              <Divider sx={{ mt: "30px", mb: "25px" }} textAlign="left">
                 <Typography sx={{ fontSize: "30px" }}>
                   {questionIndex + 1}
                 </Typography>

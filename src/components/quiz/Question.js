@@ -1,25 +1,13 @@
 import * as React from "react";
-import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import { CardActionArea } from "@mui/material";
 import Grid from "@mui/material/Grid";
-import { useNavigate } from "react-router-dom";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import ImageIcon from "@mui/icons-material/Image";
 import { useQuizContext } from "#contexts/QuizContext";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-
 import Zoom from "@mui/material/Zoom";
-import Fade from "@mui/material/Fade";
-import Grow from "@mui/material/Grow";
-
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import Answer from "./Answer";
@@ -58,7 +46,6 @@ const renderTime = (remainingTime) => {
 
 export default function Question() {
   const { state, dispatch } = useQuizContext();
-  const navigate = useNavigate();
 
   const submitAnswer = (answer) => {
     if (!state.answerSubmitted) {
@@ -97,11 +84,17 @@ export default function Question() {
           sx={{
             position: "relative",
             minWidth: 230,
-            color: "white",
-            borderColor: "black",
             marginTop: "20px",
-            height: "65px",
-            backgroundColor: "#004777",
+            height: "60px",
+            boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.4)",
+            borderRadius: "30px",
+            color: "#fff",
+            borderColor: "#33a474",
+            backgroundColor: "#33a474",
+            "&:hover": {
+              backgroundColor: "#2d7a5e",
+              borderColor: "#2d7a5e",
+            },
           }}
           endIcon={<ArrowForwardIosIcon />}
         >
@@ -115,12 +108,7 @@ export default function Question() {
     <React.Fragment>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={12} sm={12}>
-          <Typography
-            // gutterBottom
-            variant="h6"
-            component="div"
-            // sx={{ mb: 1, mt: 1 }}
-          >
+          <Typography variant="h6" component="div" sx={{color: 'primary.main'}}>
             Question {state.currentQuestionIndex + 1} of {state.totalQuestions}
           </Typography>
         </Grid>
@@ -130,21 +118,24 @@ export default function Question() {
         component="img"
         height="200"
         image={state.currentQuestion.image}
-        alt="green iguana"
+        alt="Question"
         sx={{ mt: 2, mb: 2, objectFit: "contain" }}
       />
 
-      <Typography variant="body2" sx={{ mb: 4, fontWeight: '500', fontSize: '14px', fontStyle: 'italic' }}>
+      <Typography
+        variant="body2"
+        sx={{ mb: 4, fontWeight: "500", fontSize: "14px", fontStyle: "italic" }}
+      >
         {state.currentQuestion.question}
       </Typography>
 
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {Object.keys(state.currentQuestion).length > 0 &&
           state.currentQuestion.choices.map((choice) => {
-            let choiceColor = "black";
+            let choiceColor = "primary.greyDark";
             let choiceCursor = "pointer";
-            let hoverBackgroundColor = "";
-            let hoverBorderColor = "";
+            let hoverBackgroundColor = "#fff9ae";
+            let hoverBorderColor = "primary.greyDark";
 
             if (state.answerSubmitted) {
               choiceCursor = "default";
@@ -208,41 +199,43 @@ export default function Question() {
           })}
       </Grid>
 
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid item xs={12} sm={12}>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              marginTop: "12px",
-              "@media screen and (max-width: 576px)": {
+      {!state.answerSubmitted && (
+        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+          <Grid item xs={12} sm={12}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
                 marginTop: "12px",
-              },
-            }}
-          >
-            <CountdownCircleTimer
-              key={state.currentQuestionIndex}
-              isPlaying={!state.answerSubmitted}
-              size={100}
-              strokeWidth={6}
-              duration={10}
-              colors={["#004777", "#F7B801", "#A30000", "#A30000"]}
-              colorsTime={[7, 5, 2, 0]}
-              onComplete={(totalElapsedTime) => submitAnswer("x")}
+                "@media screen and (max-width: 576px)": {
+                  marginTop: "12px",
+                },
+              }}
             >
-              {({ remainingTime, color }) => (
-                <span style={{ color }}>{renderTime(remainingTime)}</span>
-              )}
-            </CountdownCircleTimer>
-          </Box>
+              <CountdownCircleTimer
+                key={state.currentQuestionIndex}
+                isPlaying={!state.answerSubmitted}
+                size={70}
+                strokeWidth={4}
+                duration={10}
+                colors={["#33a474", "#F7B801", "#ff1919", "#FF0000"]}
+                colorsTime={[7, 5, 2, 0]}
+                onComplete={(totalElapsedTime) => submitAnswer("x")}
+              >
+                {({ remainingTime, color }) => (
+                  <span style={{ color }}>{renderTime(remainingTime)}</span>
+                )}
+              </CountdownCircleTimer>
+            </Box>
+          </Grid>
         </Grid>
-      </Grid>
+      )}
 
       <Zoom
         in={state.answerSubmitted}
         style={{
-          transitionDelay: state.answerSubmitted ? "1000ms" : "0ms",
+          transitionDelay: state.answerSubmitted ? "600ms" : "0ms",
         }}
       >
         <NextButton />

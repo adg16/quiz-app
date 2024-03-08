@@ -5,9 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: linear-gradient(to bottom, #4e54c8, #8f94fb); */
+  /* background: linear-gradient(to bottom, #5eba7d, #87c37d); Adjust colors as per your preference */
+  /* background: linear-gradient(to bottom, #E29F2F, #E29F2F); Adjust colors as per your preference */
+  background: linear-gradient(to bottom, #EBF6F1, #EBF6F1); /* Adjust colors as per your preference */
+
+  /* background-color: #33A474; */
+  overflow-x: hidden;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  /* background-color: #87c37d; */
+  /* background-color: #E29F2F; */
+  /* background-color: #ECF4F7 */
+  background-color:#EBF6F1
+
+  /* background: linear-gradient(to bottom, #4e54c8, #8f94fb); Adjust colors as per your preference */
+
 }

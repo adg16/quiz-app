@@ -1,48 +1,66 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import { CardActionArea } from "@mui/material";
-import Grid from "@mui/material/Grid";
-import { useNavigate, useLocation } from "react-router-dom";
-import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import ImageIcon from "@mui/icons-material/Image";
-import { useQuizContext } from '#contexts/QuizContext';
+import { useNavigate } from "react-router-dom";
+import ViewListIcon from "@mui/icons-material/ViewList";
+import IconButton from "@mui/material/IconButton";
+import { useQuizContext } from "#contexts/QuizContext";
 import Question from "./Question";
-import Answer from "./Answer";
 import Result from "./Result";
 
-
 export default function Quiz() {
-  const { state, dispatch } = useQuizContext();
+  const { state } = useQuizContext();
   const navigate = useNavigate();
-  const submit = () => {
-    // navigate("/answer");
+  const goToQuizList = () => {
+    navigate("/quizzes");
   };
 
- 
   useEffect(() => {
     if (Object.keys(state.currentQuiz).length === 0) {
       navigate("/quizzes");
     }
-    console.log('QUIZ STATE', state);
   }, [state]);
 
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth={false} sx={{ bgcolor: "#FFF9C4" }}>
+      <IconButton
+        onClick={() => goToQuizList()}
+        aria-label="Quizzes"
+        sx={{
+          color: "#fff",
+          borderColor: "#33a474",
+          backgroundColor: "#33a474",
+          position: "fixed",
+          boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.4)",
+          margin: "8px",
+          "&:hover": {
+            backgroundColor: "#2d7a5e",
+            borderColor: "#2d7a5e",
+          },
+        }}
+      >
+        <ViewListIcon sx={{ color: "#fff", fontSize: "40px" }} />
+      </IconButton>
+      <Container maxWidth={false}>
         <Box sx={{ textAlign: "center", paddingTop: 2, paddingBottom: 2 }}>
-          <Typography variant="h5">{state.currentQuiz.title}</Typography>
+          <Typography
+            variant="h2"
+            sx={{
+              fontSize: { xs: "30px", sm: "35px", md: "40px" },
+              fontWeight: 400,
+              color: 'primary.main'
+            }}
+          >
+            {state.currentQuiz.title}
+          </Typography>
         </Box>
-        <Box sx={{ textAlign: "center", paddingBottom: 5 }}>
+        <Box sx={{ textAlign: "center", paddingBottom: 5}}>
           <Card
             elevation={10}
             sx={{
@@ -56,11 +74,12 @@ export default function Quiz() {
             }}
           >
             <CardContent>
-              {
-                !state.answerSubmitted && state.totalAnsweredQuestions === state.totalQuestions ?
-                <Result/> : <Question />
-              }
-              {/* <Question /> */}
+              {!state.answerSubmitted &&
+              state.totalAnsweredQuestions === state.totalQuestions ? (
+                <Result />
+              ) : (
+                <Question />
+              )}
             </CardContent>
           </Card>
         </Box>

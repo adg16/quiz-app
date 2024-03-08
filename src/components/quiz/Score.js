@@ -5,21 +5,15 @@ import Box from "@mui/material/Box";
 import { useQuizContext } from "#contexts/QuizContext";
 import ConfettiExplosion from "react-confetti-explosion";
 import ReplayIcon from "@mui/icons-material/Replay";
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Button from "@mui/material/Button";
-import { useNavigate, useLocation } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 
 const Score = () => {
   const navigate = useNavigate();
-
   const { state, dispatch } = useQuizContext();
   const [progressValue, setProgressValue] = useState(0);
   const stopAt = (state.totalCorrectAnswers / state.totalQuestions) * 100;
-
-  useEffect(() => {
-    console.log("SCORE STATE", state);
-  }, []);
 
   const congratulate = () => {
     if (state.totalCorrectAnswers > 0) {
@@ -30,12 +24,11 @@ const Score = () => {
   };
 
   const retakeTheQuiz = () => {
-    dispatch({ type: 'RETAKE_THE_QUIZ'});
-    // dispatch({ type: 'START_THE_QUIZ', payload: {quiz:state.currentQuiz} });
+    dispatch({ type: "RETAKE_THE_QUIZ" });
   };
 
   const takeAnotherQuiz = () => {
-    navigate('/quizzes')
+    navigate("/quizzes");
   };
 
   useEffect(() => {
@@ -68,7 +61,7 @@ const Score = () => {
           value={progressValue}
           size={250}
           thickness={3}
-          sx={{ color: "#004777", zIndex: 1 }}
+          sx={{ color: "#33a474", zIndex: 1 }}
         />
         {/* Trail CircularProgress (gray) */}
         <CircularProgress
@@ -83,15 +76,15 @@ const Score = () => {
           <Box
             sx={{
               position: "absolute",
-              top: "0%", // Adjust top position to move the badge above the circle
+              top: "0%",
               left: "50%",
               transform: "translateX(-50%)",
               textAlign: "center",
-              backgroundColor: "#004777",
+              backgroundColor: "#33a474",
               color: "white",
-              padding: "5px 20px", // Adjust padding to define the rectangle shape
-              borderRadius: "5px", // Add border radius for rounded corners
-              zIndex: 2, // Ensure the badge is above the CircularProgress
+              padding: "5px 20px",
+              borderRadius: "5px",
+              zIndex: 2,
             }}
           >
             <Typography variant="h6" component="div">
@@ -111,57 +104,64 @@ const Score = () => {
           <Typography
             variant="h6"
             component="div"
-            color="#004777"
+            color="#33a474"
             sx={{ fontSize: "40px", fontWeight: "bold" }}
           >
             {Math.ceil((progressValue / 100) * state.totalQuestions)}/
             {state.totalQuestions}
           </Typography>
-          {/* <Typography variant="h6" component="div" sx={{fontSize: '16px'}}>
-            {progressValue}%
-        </Typography> */}
         </Box>
       </Box>
 
-      <Box >
-      <Button
-        onClick={() => retakeTheQuiz()}
-        variant="contained"
-        size="large"
-        sx={{
-          minWidth: 230,
-          color: "white",
-          borderColor: "black",
-          marginTop: "50px",
-          marginRight: "5px",
-          marginLeft: "5px",
-          height: "65px",
-          backgroundColor: "#004777",
-        }}
-        endIcon={<ReplayIcon />}
-      >
-        Retake The Quiz
-      </Button>
+      <Box>
+        <Button
+          onClick={() => retakeTheQuiz()}
+          variant="contained"
+          size="large"
+          sx={{
+            minWidth: 230,
+            marginTop: "50px",
+            marginRight: "5px",
+            marginLeft: "5px",
+            height: "60px",
+            borderRadius: "30px",
+            color: "#fff",
+            borderColor: "#33a474",
+            backgroundColor: "#33a474",
+            "&:hover": {
+              backgroundColor: "#2d7a5e",
+              borderColor: "#2d7a5e",
+            },
+          }}
+          endIcon={<ReplayIcon />}
+        >
+          Retake The Quiz
+        </Button>
 
-      <Button
-        onClick={() => takeAnotherQuiz()}
-        variant="contained"
-        size="large"
-        sx={{
-          minWidth: 230,
-          color: "white",
-          borderColor: "black",
-          marginTop: "50px",
-          marginRight: "5px",
-          marginLeft: "5px",
-          height: "65px",
-          backgroundColor: "#004777",
-        }}
-        endIcon={<ArrowForwardIosIcon />}
-      >
-        Take Another Quiz
-      </Button>
-      </Box >
+        <Button
+          onClick={() => takeAnotherQuiz()}
+          variant="contained"
+          size="large"
+          sx={{
+            minWidth: 230,
+            marginTop: "50px",
+            marginRight: "5px",
+            marginLeft: "5px",
+            height: "60px",
+            borderRadius: "30px",
+            color: "#fff",
+            borderColor: "#33a474",
+            backgroundColor: "#33a474",
+            "&:hover": {
+              backgroundColor: "#2d7a5e",
+              borderColor: "#2d7a5e",
+            },
+          }}
+          endIcon={<ArrowForwardIosIcon />}
+        >
+          Take Another Quiz
+        </Button>
+      </Box>
     </>
   );
 };
