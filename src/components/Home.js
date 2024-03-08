@@ -5,6 +5,8 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
+import Grid from "@mui/material/Grid";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -15,43 +17,78 @@ export default function Home() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth={false} sx={{ bgcolor: "#fff" }}>
-        <Box sx={{ textAlign: "center", paddingTop: 5, paddingBottom: 5 }}>
-          <Typography variant="h2">Welcome to Quiz App</Typography>
-        </Box>
-        <Box sx={{ textAlign: "center", paddingBottom: 5 }}>
-          <Typography variant="body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            sagittis congue quam eget pulvinar. Aenean blandit erat et euismod
-            euismod. Curabitur iaculis sapien sed purus efficitur, non pretium
-            lectus facilisis. Aliquam auctor consectetur eros at convallis.
-            Aenean lorem odio, posuere eu risus vel, egestas pulvinar dolor.
-            Vivamus elit ante, convallis vitae diam et, malesuada eleifend
-            magna. Proin eget nulla vel orci consectetur bibendum id id risus.
-            Integer interdum luctus diam a vestibulum. Sed efficitur interdum
-            rhoncus. Fusce nunc magna, tincidunt ut fermentum vitae, faucibus
-            nec orci. Ut nec volutpat nulla.
-          </Typography>
-        </Box>
-        <Box sx={{ textAlign: "center", paddingBottom: 5 }}>
-          <Typography variant="body">
-            Praesent gravida efficitur euismod. Vivamus justo nunc, dictum
-            gravida malesuada a, maximus ut nisl. Ut ac consequat nibh. Praesent
-            urna odio, pharetra tempus euismod vel, semper vel nibh. Proin
-            tempus vestibulum tellus sed accumsan. Maecenas in dignissim ipsum,
-            nec porttitor libero. Ut nec porta est. Cras nec faucibus diam.
-          </Typography>
-        </Box>
-        <Box sx={{ textAlign: "center" }}>
-          <Button
-            variant="outlined"
-            size="large"
-            sx={{ minWidth: 200, color: "black", borderColor: "black" }}
-            onClick={goToQuizzes}
-          >
-            Take a Quiz
-          </Button>
-        </Box>
+      <Container maxWidth={false} sx={{}}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={8}>
+            <Box
+              sx={{
+                textAlign: "left",
+                paddingTop: { xs: 10, md: 15 },
+                paddingBottom: 5,
+              }}
+            >
+              <Typography variant="h2" sx={{ color: "#343C4B" }}>
+                Hello,
+              </Typography>
+              <Typography variant="h2" sx={{ color: "#343C4B" }}>
+                welcome to mQuiz!
+              </Typography>
+            </Box>
+            <Box sx={{ textAlign: "left", paddingBottom: 5, color: "#343C4B" }}>
+              <Typography variant="body">
+                Praesent gravida efficitur euismod. Vivamus justo nunc, dictum
+                gravida malesuada a, maximus ut nisl. Ut ac consequat nibh.
+                Praesent urna odio, pharetra tempus euismod vel, semper vel
+                nibh. Proin tempus vestibulum tellus sed accumsan. Maecenas in
+                dignissim ipsum, nec porttitor libero. Ut nec porta est. Cras
+                nec faucibus diam.
+              </Typography>
+            </Box>
+            <Box sx={{ textAlign: "center" }}>
+              <Button
+                variant="outlined"
+                size="large"
+                endIcon={<ArrowForwardIosIcon />}
+                sx={{
+                  minWidth: 200,
+                  fontSize: "18px",
+                  color: "#fff",
+                  borderColor: "#33a474",
+                  backgroundColor: "#33a474",
+                  borderRadius: "30px",
+                  height: "60px",
+                  width: "250px",
+                  boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.4)",
+                  "&:hover": {
+                    backgroundColor: "#2d7a5e",
+                    borderColor: "#2d7a5e",
+                  },
+                }}
+                onClick={goToQuizzes}
+              >
+                Take a Quiz
+              </Button>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Box sx={{ position: "relative" }}>
+              <Box
+                component="img"
+                sx={{
+                  position: "absolute",
+                  maxHeight: { xs: 342, sm: 500, md: 800 },
+                  maxWidth: { xs: 342, sm: 500, md: 800 },
+                  top: { xs: -670, sm: -630, md: -180 },
+                  right: { xs: -68, sm: -98, md: -140 },
+                  opacity: 0.1,
+                  transform: "rotate(45deg)",
+                }}
+                alt="math-bg"
+                src="/images/math_bg_1.png"
+              />
+            </Box>
+          </Grid>
+        </Grid>
       </Container>
     </React.Fragment>
   );
