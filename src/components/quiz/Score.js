@@ -80,7 +80,7 @@ const Score = () => {
           <Box
             sx={{
               position: "absolute",
-              top: "0%",
+              top: { xs: "-12px", md: "0%" },
               left: "50%",
               transform: "translateX(-50%)",
               textAlign: "center",
@@ -91,7 +91,11 @@ const Score = () => {
               zIndex: 2,
             }}
           >
-            <Typography variant="h6" component="div">
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ fontSize: { xs: "14px", md: "20px" } }}
+            >
               Congrats!
             </Typography>
           </Box>
