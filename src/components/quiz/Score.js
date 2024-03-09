@@ -8,12 +8,16 @@ import ReplayIcon from "@mui/icons-material/Replay";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Score = () => {
   const navigate = useNavigate();
   const { state, dispatch } = useQuizContext();
   const [progressValue, setProgressValue] = useState(0);
   const stopAt = (state.totalCorrectAnswers / state.totalQuestions) * 100;
+
+  const isSmallScreen = useMediaQuery("(max-width:600px)");
+  let circleSize = isSmallScreen ? 140 : 250;
 
   const congratulate = () => {
     if (state.totalCorrectAnswers > 0) {
@@ -59,7 +63,7 @@ const Score = () => {
         <CircularProgress
           variant="determinate"
           value={progressValue}
-          size={250}
+          size={circleSize}
           thickness={3}
           sx={{ color: "#33a474", zIndex: 1 }}
         />
@@ -67,7 +71,7 @@ const Score = () => {
         <CircularProgress
           variant="determinate"
           value={100}
-          size={250}
+          size={circleSize}
           thickness={3}
           sx={{ color: "lightgray", position: "absolute", zIndex: 0 }}
         />
