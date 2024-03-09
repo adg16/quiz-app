@@ -57,7 +57,6 @@ export default function Question() {
   };
 
   const next = () => {
-    console.log("GO TO NEXT QUESTION");
     if (state.totalQuestions === state.totalAnsweredQuestions) {
       dispatch({
         type: "VIEW_FINAL_SCORE",
@@ -124,17 +123,23 @@ export default function Question() {
           height="200"
           image={state.currentQuestion.image}
           alt="Question"
-          sx={{ 
-            mt: {xs: '-40px', md: '16px'}, 
-            mb: {xs: '-50px', md: '16px'}, 
-            objectFit: "contain" 
+          sx={{
+            mt: { xs: "-40px", md: "16px" },
+            mb: { xs: "-50px", md: "16px" },
+            objectFit: "contain",
           }}
         />
       )}
 
       <Typography
         variant="body2"
-        sx={{ mt: 3, mb: 4, fontWeight: "500", fontSize: "14px", fontStyle: "italic" }}
+        sx={{
+          mt: 3,
+          mb: 4,
+          fontWeight: "500",
+          fontSize: "14px",
+          fontStyle: "italic",
+        }}
       >
         {state.currentQuestion.question}
       </Typography>

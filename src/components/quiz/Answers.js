@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { useQuizContext } from "#contexts/QuizContext";
@@ -28,7 +28,13 @@ const Answers = () => {
           return (
             <Box key={questionIndex}>
               <Divider sx={{ mt: "30px", mb: "25px" }} textAlign="left">
-                <Typography sx={{ fontSize: "30px", fontWeight: 500, color: 'primary.main' }}>
+                <Typography
+                  sx={{
+                    fontSize: "30px",
+                    fontWeight: 500,
+                    color: "primary.main",
+                  }}
+                >
                   {questionIndex + 1}
                 </Typography>
               </Divider>
@@ -39,10 +45,10 @@ const Answers = () => {
                   height="200"
                   image={question.image}
                   alt="green iguana"
-                  sx={{ 
-                    mt: {xs: '-40px', md: '16px'}, 
-                    mb: {xs: '-50px', md: '16px'}, 
-                    objectFit: "contain" 
+                  sx={{
+                    mt: { xs: "-40px", md: "16px" },
+                    mb: { xs: "-50px", md: "16px" },
+                    objectFit: "contain",
                   }}
                 />
               )}
@@ -55,12 +61,15 @@ const Answers = () => {
                 sx={{
                   color: yourAnswer === correctAnswer ? "green" : "red",
                   fontWeight: "bold",
-                  fontSize: '20px'
+                  fontSize: "20px",
                 }}
               >
                 Your Answer: {yourAnswer}
               </Typography>
-              <Typography sx={{fontSize: '20px'}}> Correct Answer: {correctAnswer} </Typography>
+              <Typography sx={{ fontSize: "20px" }}>
+                {" "}
+                Correct Answer: {correctAnswer}{" "}
+              </Typography>
 
               {question.correctAnswerExplanationImage && (
                 <CardMedia
@@ -68,10 +77,10 @@ const Answers = () => {
                   height="200"
                   image={question.correctAnswerExplanationImage}
                   alt="Answer"
-                  sx={{ 
-                    mt: {xs: '-40px', md: '16px'}, 
-                    mb: {xs: '-50px', md: '16px'}, 
-                    objectFit: "contain" 
+                  sx={{
+                    mt: { xs: "-40px", md: "16px" },
+                    mb: { xs: "-50px", md: "16px" },
+                    objectFit: "contain",
                   }}
                 />
               )}

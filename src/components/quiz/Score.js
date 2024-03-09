@@ -144,7 +144,7 @@ const Score = () => {
           size="large"
           sx={{
             minWidth: 230,
-            marginTop: {xs: "14px", md: "50px"},
+            marginTop: { xs: "14px", md: "50px" },
             marginRight: "5px",
             marginLeft: "5px",
             height: "60px",
