@@ -64,7 +64,7 @@ export default function QuizList() {
             sx={{
               fontSize: { xs: "30px", sm: "35px", md: "40px" },
               fontWeight: 400,
-              color: 'primary.main'
+              color: "primary.main",
             }}
           >
             Available Quizzes
@@ -88,7 +88,12 @@ export default function QuizList() {
             >
               <CardActionArea onClick={() => startTheQuiz(quiz)} sx={{}}>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div" sx={{color:'primary.main'}}>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                    sx={{ color: "primary.main" }}
+                  >
                     {quiz.title}
                   </Typography>
                   <Typography variant="body2" sx={{ fontStyle: "italic" }}>

@@ -15,16 +15,15 @@ const initialState = {
   currentSubmittedAnswer: null,
   answerSubmitted: false,
   congratulate: false,
-  submittedAnswers: []
+  submittedAnswers: [],
 };
 
 // Define the reducer function to handle state transitions
 const reducer = (state, action) => {
-    console.log(action);
   switch (action.type) {
     case "RESET_THE_QUIZ":
       return {
-        ...initialState
+        ...initialState,
       };
     case "START_THE_QUIZ":
       return {
@@ -38,12 +37,13 @@ const reducer = (state, action) => {
         totalCorrectAnswers: state.totalCorrectAnswers,
       };
     case "RETAKE_THE_QUIZ":
-        return {
-          ...initialState,
-          currentQuiz: state.currentQuiz,
-          totalQuestions: state.currentQuiz.questions.length,
-          currentQuestion: state.currentQuiz.questions[state.currentQuestionIndex],
-        };
+      return {
+        ...initialState,
+        currentQuiz: state.currentQuiz,
+        totalQuestions: state.currentQuiz.questions.length,
+        currentQuestion:
+          state.currentQuiz.questions[state.currentQuestionIndex],
+      };
     case "SUBMIT_THE_ANSWER":
       const totalCorrectAnswers = () => {
         if (
@@ -58,7 +58,13 @@ const reducer = (state, action) => {
 
       return {
         ...state,
-        submittedAnswers: [...state.submittedAnswers, {questionIndex:state.currentQuestionIndex, answer:action.payload.sumbmittedAnswer}],
+        submittedAnswers: [
+          ...state.submittedAnswers,
+          {
+            questionIndex: state.currentQuestionIndex,
+            answer: action.payload.sumbmittedAnswer,
+          },
+        ],
         answerSubmitted: true,
         currentSubmittedAnswer: action.payload.sumbmittedAnswer,
         totalAnsweredQuestions: state.totalAnsweredQuestions + 1,
@@ -70,26 +76,27 @@ const reducer = (state, action) => {
         answerSubmitted: false,
         currentSubmittedAnswer: null,
         currentQuestionIndex: state.currentQuestionIndex + 1,
-        currentQuestion: state.currentQuiz.questions[state.currentQuestionIndex + 1],
+        currentQuestion:
+          state.currentQuiz.questions[state.currentQuestionIndex + 1],
       };
     case "VIEW_FINAL_SCORE":
-        return {
-          ...state,
-          answerSubmitted: false,
-          currentSubmittedAnswer: null,
-        };
+      return {
+        ...state,
+        answerSubmitted: false,
+        currentSubmittedAnswer: null,
+      };
     case "CONGRATULATE":
-          return {
-            ...state,
-            congratulate: true,
-          };
+      return {
+        ...state,
+        congratulate: true,
+      };
     default:
       return state;
   }
 };
 
 // Create a component that will provide the context
-// IncrementProvider takes in an argument called children
+// QuizProvider takes in an argument called children
 export const QuizProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
