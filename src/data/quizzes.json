@@ -21,10 +21,10 @@
         {
           "id": 2,
           "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque? Q1-2",
-          "image": "/images/placeholder_600x200.png",
+          "image": null,
           "correctAnswer": "a",
           "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.Q1-2",
-          "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
+          "correctAnswerExplanationImage": null,
           "choices" : [
             {"id": "a", "value":"Aliquet"},
             {"id": "b", "value":"Tincidunt"},

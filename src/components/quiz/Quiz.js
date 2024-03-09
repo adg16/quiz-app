@@ -48,19 +48,26 @@ export default function Quiz() {
         <ViewListIcon sx={{ color: "#fff", fontSize: "40px" }} />
       </IconButton>
       <Container maxWidth={false}>
-        <Box sx={{ textAlign: "center", paddingTop: 2, paddingBottom: 2 }}>
+        <Box
+          sx={{
+            textAlign: "center",
+            textAlign: "center",
+            paddingTop: "40px",
+            paddingBottom: "25px",
+          }}
+        >
           <Typography
             variant="h2"
             sx={{
               fontSize: { xs: "30px", sm: "35px", md: "40px" },
               fontWeight: 400,
-              color: 'primary.main'
+              color: "primary.main",
             }}
           >
             {state.currentQuiz.title}
           </Typography>
         </Box>
-        <Box sx={{ textAlign: "center", paddingBottom: 5}}>
+        <Box sx={{ textAlign: "center", paddingBottom: 5 }}>
           <Card
             elevation={10}
             sx={{

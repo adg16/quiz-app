@@ -39,19 +39,23 @@ const Answer = React.forwardRef(function (props, ref) {
       <Divider sx={{ mt: "28px", mb: "25px" }}>
         <TipsAndUpdatesIcon sx={{ color: "primary.main", fontSize: "40px" }} />
       </Divider>
-      <CardMedia
-        component="img"
-        height="200"
-        image="/images/placeholder_600x200.png"
-        alt="Answer"
-        sx={{ mt: 2, mb: 2, objectFit: "contain" }}
-      />
 
-      <Typography variant="body2" sx={{ mb: 4 }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet
-        sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque.
-        Aliquam ut luctus mauris. Ut nisl magna, ultricies quis libero in,
-        aliquam sodales eros.
+      {state.currentQuestion.correctAnswerExplanationImage && (
+        <CardMedia
+          component="img"
+          height="200"
+          image={state.currentQuestion.correctAnswerExplanationImage}
+          alt="Answer"
+          sx={{ 
+            mt: {xs: '-40px', md: '16px'}, 
+            mb: {xs: '-50px', md: '16px'}, 
+            objectFit: "contain" 
+          }}
+        />
+      )}
+
+      <Typography variant="body2" sx={{ mt: 3, mb: 4 }}>
+        {state.currentQuestion.correctAnswerExplanation}
       </Typography>
     </div>
   );

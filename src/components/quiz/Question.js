@@ -108,23 +108,33 @@ export default function Question() {
     <React.Fragment>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={12} sm={12}>
-          <Typography variant="h6" component="div" sx={{color: 'primary.main'}}>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ color: "primary.main" }}
+          >
             Question {state.currentQuestionIndex + 1} of {state.totalQuestions}
           </Typography>
         </Grid>
       </Grid>
 
-      <CardMedia
-        component="img"
-        height="200"
-        image={state.currentQuestion.image}
-        alt="Question"
-        sx={{ mt: 2, mb: 2, objectFit: "contain" }}
-      />
+      {state.currentQuestion.image && (
+        <CardMedia
+          component="img"
+          height="200"
+          image={state.currentQuestion.image}
+          alt="Question"
+          sx={{ 
+            mt: {xs: '-40px', md: '16px'}, 
+            mb: {xs: '-50px', md: '16px'}, 
+            objectFit: "contain" 
+          }}
+        />
+      )}
 
       <Typography
         variant="body2"
-        sx={{ mb: 4, fontWeight: "500", fontSize: "14px", fontStyle: "italic" }}
+        sx={{ mt: 3, mb: 4, fontWeight: "500", fontSize: "14px", fontStyle: "italic" }}
       >
         {state.currentQuestion.question}
       </Typography>
@@ -132,18 +142,22 @@ export default function Question() {
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {Object.keys(state.currentQuestion).length > 0 &&
           state.currentQuestion.choices.map((choice) => {
-            let choiceColor = "primary.greyDark";
             let choiceCursor = "pointer";
-            let hoverBackgroundColor = "#fff9ae";
-            let hoverBorderColor = "primary.greyDark";
+            let choiceColor = "#4298b4";
+            let choiceBorderColor = "#4298b4";
+            let hoverBackgroundColor = "#d9eaf0";
+            let hoverBorderColor = "#4298b4";
 
             if (state.answerSubmitted) {
               choiceCursor = "default";
+              choiceColor = "#CCCCCC";
+              choiceBorderColor = "#CCCCCC";
               hoverBackgroundColor = "inherit";
               hoverBorderColor = "inherit";
 
               if (choice.id === state.currentQuestion.correctAnswer) {
                 choiceColor = "green";
+                choiceBorderColor = "green";
               }
 
               if (
@@ -151,6 +165,7 @@ export default function Question() {
                 choice.id === state.currentSubmittedAnswer
               ) {
                 choiceColor = "red";
+                choiceBorderColor = "red";
               }
             }
 
@@ -164,10 +179,13 @@ export default function Question() {
                   sx={{
                     position: "relative",
                     minWidth: 230,
+                    borderRadius: 20,
+                    borderWidth: 2,
                     color: choiceColor,
-                    borderColor: choiceColor,
+                    borderColor: choiceBorderColor,
                     cursor: choiceCursor,
                     "&:hover": {
+                      borderWidth: 2,
                       backgroundColor: hoverBackgroundColor,
                       borderColor: hoverBorderColor,
                     },

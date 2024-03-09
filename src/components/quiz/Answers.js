@@ -1,18 +1,12 @@
-import React, { useState, useEffect } from "react";
-import CircularProgress from "@mui/material/CircularProgress";
+import React, { useEffect } from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { useQuizContext } from "#contexts/QuizContext";
-import ConfettiExplosion from "react-confetti-explosion";
 import Divider from "@mui/material/Divider";
 import CardMedia from "@mui/material/CardMedia";
 
 const Answers = () => {
-  const { state, dispatch } = useQuizContext();
-
-  useEffect(() => {
-    console.log("ANSWERS STATE", state);
-  }, []);
+  const { state } = useQuizContext();
 
   const findValueById = (id, array) => {
     const val = array.find((el) => el.id === id);
@@ -34,39 +28,55 @@ const Answers = () => {
           return (
             <Box key={questionIndex}>
               <Divider sx={{ mt: "30px", mb: "25px" }} textAlign="left">
-                <Typography sx={{ fontSize: "30px" }}>
+                <Typography sx={{ fontSize: "30px", fontWeight: 500, color: 'primary.main' }}>
                   {questionIndex + 1}
                 </Typography>
               </Divider>
 
-              <CardMedia
-                component="img"
-                height="200"
-                image={question.image}
-                alt="green iguana"
-                sx={{ mt: 2, mb: 2, objectFit: "contain" }}
-              />
+              {question.image && (
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image={question.image}
+                  alt="green iguana"
+                  sx={{ 
+                    mt: {xs: '-40px', md: '16px'}, 
+                    mb: {xs: '-50px', md: '16px'}, 
+                    objectFit: "contain" 
+                  }}
+                />
+              )}
 
               <Typography variant="body2" sx={{ mb: 4 }}>
                 {question.question}
               </Typography>
 
               <Typography
-                sx={{ color: yourAnswer === correctAnswer ? "green" : "red", fontWeight:'bold' }}
+                sx={{
+                  color: yourAnswer === correctAnswer ? "green" : "red",
+                  fontWeight: "bold",
+                  fontSize: '20px'
+                }}
               >
                 Your Answer: {yourAnswer}
               </Typography>
-              <Typography> Correct Answer: {correctAnswer} </Typography>
+              <Typography sx={{fontSize: '20px'}}> Correct Answer: {correctAnswer} </Typography>
 
-              <CardMedia
-                component="img"
-                height="200"
-                image={question.correctAnswerExplanationImage}
-                alt="green iguana"
-                sx={{ mt: 2, mb: 2, objectFit: "contain" }}
-              />
+              {question.correctAnswerExplanationImage && (
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image={question.correctAnswerExplanationImage}
+                  alt="Answer"
+                  sx={{ 
+                    mt: {xs: '-40px', md: '16px'}, 
+                    mb: {xs: '-50px', md: '16px'}, 
+                    objectFit: "contain" 
+                  }}
+                />
+              )}
 
-              <Typography variant="body2" sx={{ mb: 4 }}>
+              <Typography variant="body2" sx={{ mt: 3, mb: 4 }}>
                 {question.correctAnswerExplanation}
               </Typography>
             </Box>
