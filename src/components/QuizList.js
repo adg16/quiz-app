@@ -8,14 +8,18 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { CardActionArea } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import quizzes from "#data/quizzes.json";
 import { useQuizContext } from "#contexts/QuizContext";
 import HomeIcon from "@mui/icons-material/Home";
 import IconButton from "@mui/material/IconButton";
+import quiz1 from "#data/quiz_1.json";
+import quiz2 from "#data/quiz_2.json";
+import quiz3 from "#data/quiz_3.json";
 
 export default function QuizList() {
   const { dispatch } = useQuizContext();
   const navigate = useNavigate();
+
+  const quizzes = [quiz1, quiz2, quiz3];
 
   const goToHome = () => {
     navigate("/");
