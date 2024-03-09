@@ -80,7 +80,7 @@ const Score = () => {
               left: "50%",
               transform: "translateX(-50%)",
               textAlign: "center",
-              backgroundColor: "#33a474",
+              backgroundColor: "primary.main",
               color: "white",
               padding: "5px 20px",
               borderRadius: "5px",
@@ -104,7 +104,7 @@ const Score = () => {
           <Typography
             variant="h6"
             component="div"
-            color="#33a474"
+            color="primary.main"
             sx={{ fontSize: "40px", fontWeight: "bold" }}
           >
             {Math.ceil((progressValue / 100) * state.totalQuestions)}/
@@ -126,11 +126,11 @@ const Score = () => {
             height: "60px",
             borderRadius: "30px",
             color: "#fff",
-            borderColor: "#33a474",
-            backgroundColor: "#33a474",
+            borderColor: "primary.main",
+            backgroundColor: "primary.main",
             "&:hover": {
-              backgroundColor: "#2d7a5e",
-              borderColor: "#2d7a5e",
+              backgroundColor: "primary.mainDark",
+              borderColor: "primary.mainDark",
             },
           }}
           endIcon={<ReplayIcon />}
@@ -150,11 +150,11 @@ const Score = () => {
             height: "60px",
             borderRadius: "30px",
             color: "#fff",
-            borderColor: "#33a474",
-            backgroundColor: "#33a474",
+            borderColor: "primary.main",
+            backgroundColor: "primary.main",
             "&:hover": {
-              backgroundColor: "#2d7a5e",
-              borderColor: "#2d7a5e",
+              backgroundColor: "primary.mainDark",
+              borderColor: "primary.mainDark",
             },
           }}
           endIcon={<ArrowForwardIosIcon />}

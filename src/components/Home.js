@@ -27,14 +27,20 @@ export default function Home() {
                 paddingBottom: 5,
               }}
             >
-              <Typography variant="h2" sx={{ color: "#343C4B" }}>
+              <Typography variant="h2" sx={{ color: "primary.greyDarker" }}>
                 Hello,
               </Typography>
-              <Typography variant="h2" sx={{ color: "#343C4B" }}>
+              <Typography variant="h2" sx={{ color: "primary.greyDarker" }}>
                 welcome to mQuiz!
               </Typography>
             </Box>
-            <Box sx={{ textAlign: "left", paddingBottom: 5, color: "#343C4B" }}>
+            <Box
+              sx={{
+                textAlign: "left",
+                paddingBottom: 5,
+                color: "primary.greyDarker",
+              }}
+            >
               <Typography variant="body">
                 Praesent gravida efficitur euismod. Vivamus justo nunc, dictum
                 gravida malesuada a, maximus ut nisl. Ut ac consequat nibh.
@@ -53,15 +59,15 @@ export default function Home() {
                   minWidth: 200,
                   fontSize: "18px",
                   color: "#fff",
-                  borderColor: "#33a474",
-                  backgroundColor: "#33a474",
+                  borderColor: "primary.main",
+                  backgroundColor: "primary.main",
                   borderRadius: "30px",
                   height: "60px",
                   width: "250px",
                   boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.4)",
                   "&:hover": {
-                    backgroundColor: "#2d7a5e",
-                    borderColor: "#2d7a5e",
+                    backgroundColor: "primary.mainDark",
+                    borderColor: "primary.mainDark",
                   },
                 }}
                 onClick={goToQuizzes}

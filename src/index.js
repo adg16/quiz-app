@@ -17,6 +17,7 @@ const myTheme = createTheme({
       mainDark: "#2d7a5e",
       grey: "#636363",
       greyDark: "#3b3b3b",
+      greyDarker: "#343C4B"
     },
   },
 });

@@ -44,7 +44,7 @@ const Answers = () => {
                   component="img"
                   height="200"
                   image={question.image}
-                  alt="green iguana"
+                  alt="Answer"
                   sx={{
                     mt: { xs: "-40px", md: "16px" },
                     mb: { xs: "-50px", md: "16px" },

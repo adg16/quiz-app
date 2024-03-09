@@ -34,14 +34,14 @@ export default function Quiz() {
         aria-label="Quizzes"
         sx={{
           color: "#fff",
-          borderColor: "#33a474",
-          backgroundColor: "#33a474",
+          borderColor: "primary.main",
+          backgroundColor: "primary.main",
           position: "fixed",
           boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.4)",
           margin: "8px",
           "&:hover": {
-            backgroundColor: "#2d7a5e",
-            borderColor: "#2d7a5e",
+            backgroundColor: "primary.mainDark",
+            borderColor: "primary.mainDark",
           },
         }}
       >

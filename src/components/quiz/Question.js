@@ -88,11 +88,11 @@ export default function Question() {
             boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.4)",
             borderRadius: "30px",
             color: "#fff",
-            borderColor: "#33a474",
-            backgroundColor: "#33a474",
+            borderColor: "primary.main",
+            backgroundColor: "primary.main",
             "&:hover": {
-              backgroundColor: "#2d7a5e",
-              borderColor: "#2d7a5e",
+              backgroundColor: "primary.mainDark",
+              borderColor: "primary.mainDark",
             },
           }}
           endIcon={<ArrowForwardIosIcon />}
