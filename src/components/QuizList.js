@@ -77,7 +77,7 @@ export default function QuizList() {
             Available Quizzes
           </Typography>
         </Box>
-        <Grid container spacing={3} justifyContent="center">
+        <Grid container spacing={1.5} justifyContent="center">
           {quizzes.map((quiz) => (
             <Grid item key={quiz.id} xs={12} sm={12}>
               <Card
