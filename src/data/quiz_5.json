@@ -5,30 +5,144 @@
     "questions": [
       {
         "id": 1,
-        "question": "Aliquam",
-        "image": "/images/quiz/quizX_qY_question.jpg",
-        "correctAnswer": "a",
-        "correctAnswerExplanation": "Praesent",
-        "correctAnswerExplanationImage": "/images/quiz/quizX_qY_explanation.jpg",
+        "question": "If a polygon has 20 sides, what is the sum of its exterior angles?",
+        "image": "/images/quiz/quiz5_q1_question.jpg",
+        "correctAnswer": "b",
+        "correctAnswerExplanation": "<b>The exterior angles of all polygons have a sum of 360 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz5_q1_explanation.jpg",
         "choices" : [
-          {"id": "a", "value":"Aliquet"},
-          {"id": "b", "value":"Tincidunt"},
-          {"id": "c", "value":"Justo"},
-          {"id": "d", "value":"Sodales"}
+          {"id": "a", "value":"180 degrees"},
+          {"id": "b", "value":"360 degrees"},
+          {"id": "c", "value":"540 degrees"},
+          {"id": "d", "value":"720 degrees"}
         ]
       },
       {
         "id": 2,
-        "question": "Aliquam",
-        "image": "/images/quiz/quizX_qY_question.jpg",
+        "question": "What is the relationship between the number of sides and the sum of interior angles in a polygon?",
+        "image": null,
         "correctAnswer": "a",
-        "correctAnswerExplanation": "Praesent",
-        "correctAnswerExplanationImage": "/images/quiz/quizX_qY_explanation.jpg",
+        "correctAnswerExplanation": "<b>As the number of sides of a polygon increases, the sum of interior angles also increases, therefore, it has a direct relationship or a direct proportion.</b>",
+        "correctAnswerExplanationImage": null,
+        "longChoices": true,
         "choices" : [
-          {"id": "a", "value":"Aliquet"},
-          {"id": "b", "value":"Tincidunt"},
-          {"id": "c", "value":"Justo"},
-          {"id": "d", "value":"Sodales"}
+          {"id": "a", "value":"Direct proportion"},
+          {"id": "b", "value":"Inverse proportion"},
+          {"id": "c", "value":"No relationship"},
+          {"id": "d", "value":"Exponential relationship"}
+        ]
+      },
+      {
+        "id": 3,
+        "question": "If a polygon has 13 sides, what is the sum of its interior angles?",
+        "image": "/images/quiz/quiz5_q3_question.jpg",
+        "correctAnswer": "d",
+        "correctAnswerExplanation": "In order to find the <b>sum of the interior angles</b> we will use, <b>(n-2)180</b> since it has 13 sides then <b>n=13.<br>(n-2)180<br>=(13-2)180<br>=(11)180<br>=1,980</b> <br> Therefore, <b>the sum of the interior angles of a polygon that has 13 sides is 1,980 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz5_q3_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"1080 degrees"},
+          {"id": "b", "value":"1440 degrees"},
+          {"id": "c", "value":"1800 degrees"},
+          {"id": "d", "value":"1,980 degrees"}
+        ]
+      },
+      {
+        "id": 4,
+        "question": "What is the measure of each interior angle of a regular hexagon?",
+        "image": "/images/quiz/quiz5_q4_question.jpg",
+        "correctAnswer": "a",
+        "correctAnswerExplanation": "<b>A hexagon has six sides</b>, therefore:<br>Use the formula <b>(n-2)180 / n</b>, whereas <b>n = 6<br>=(6-2)180 / 6<br>=(4)180 / 6<br>=720 / 6<br>=120</b> <br> Therefore, <b>the measure of an interior angle of a regular pentagon is 120 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz5_q4_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"120 degrees"},
+          {"id": "b", "value":"130 degrees"},
+          {"id": "c", "value":"140 degrees"},
+          {"id": "d", "value":"150 degrees"}
+        ]
+      },
+      {
+        "id": 5,
+        "question": "In a triangle, the sum of the measures of two angles is 90 degrees. What type of triangle is it?",
+        "image": null,
+        "correctAnswer": "c",
+        "correctAnswerExplanation": "If the <b>sum of the measures of two angles in a triangle is 90 degrees, then the third angle must be 90 degrees as well, because the sum of the angles in any triangle is always 180 degrees.<br>A triangle with one right angle (an angle measuring exactly 90 degrees) is called a right triangle. So, the triangle you describe is a right triangle.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz5_q5_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"Equilateral"},
+          {"id": "b", "value":"Isosceles"},
+          {"id": "c", "value":"right-angled"},
+          {"id": "d", "value":"scalene"}
+        ]
+      },
+      {
+        "id": 6,
+        "question": "A soccer field is in the shape of a rectangle with two semicircles on the ends. If the length of the field is 90 meters and the width is 60 meters, what is the total length of the fencing needed to enclose the soccer field?",
+        "image": "/images/quiz/quiz5_q6_question.jpg",
+        "correctAnswer": "d",
+        "correctAnswerExplanation": "The question is asking for the <b>perimeter of the rectangular field</b> since it asks <b>the total length of fencing needed to enclose the soccer field</b>. <br>In order to solve for the perimeter, we will use the formula <b>2L + 2W</b>, whereas <b>L = 90m and W = 60m.<br>Perimeter = 2L + 2W <br>            = 2(90) + 2(60) <br>            = 180 + 120 <br>            = 300</b> <br> Therefore, <b>the total length of fencing needed to enclose the soccer field is 300m</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz5_q6_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"540 meters"},
+          {"id": "b", "value":"150 meters"},
+          {"id": "c", "value":"5400 meters"},
+          {"id": "d", "value":"300 meters"}
+        ]
+      },
+      {
+        "id": 7,
+        "question": "What is the sum of the interior angles of a regular decagon?",
+        "image": "/images/quiz/quiz5_q7_question.jpg",
+        "correctAnswer": "a",
+        "correctAnswerExplanation": "To find the <b>sum of the interior angles</b> we will use <b>(n-2)180</b>, since a <b>decagon has 10 sides, then n=10.<br>(n-2)180<br>=(10-2)180<br>=(8)180<br>=1,440</b> <br> Therefore, <b>the sum of the interior angles of a regular decagon is 1,440 degrees</b>.",
+        "correctAnswerExplanationImage": "/images/quiz/quiz5_q7_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"1440 degrees"},
+          {"id": "b", "value":"1800 degrees"},
+          {"id": "c", "value":"1980 degrees"},
+          {"id": "d", "value":"2160 degrees"}
+        ]
+      },
+      {
+        "id": 8,
+        "question": "If a polygon has n sides, what is the sum of its interior angles in terms of n?",
+        "image": null,
+        "correctAnswer": "b",
+        "correctAnswerExplanation": "<b>In finding the sum of interior angles of a polygon, the formula is (n-2) * 180.</b>",
+        "correctAnswerExplanationImage": null,
+        "longChoices": true,
+        "choices" : [
+          {"id": "a", "value":"(n-2) * 90 degrees"},
+          {"id": "b", "value":"(n-2) * 180 degrees"},
+          {"id": "c", "value":"(n-1) * 90 degrees"},
+          {"id": "d", "value":"(n-1) * 180 degrees"}
+        ]
+      },
+      {
+        "id": 9,
+        "question": "A stop sign is an octagon. If each side of the stop sign measures 30 centimeters, what is the total perimeter of the stop sign?",
+        "image": "/images/quiz/quiz5_q9_question.jpg",
+        "correctAnswer": "b",
+        "correctAnswerExplanation": "The question is asking for the <b>perimeter of an octagon</b>, so we use the formula <b>P = 8a</b>, whereas <b>a = measure of the side</b>. <br> Since the <b>measure of the side is already given, 30 cm</b>, we <b>substitute it in to the equation: P = 8a<br>P = 8a<br>P = 8(30cm)<br>P = 240cm</b> <br> Therefore, the <b>total perimeter of the stop sign is 240 cm.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz5_q9_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"300 centimeters"},
+          {"id": "b", "value":"240 centimeters"},
+          {"id": "c", "value":"320 centimeters"},
+          {"id": "d", "value":"260 centimeters"}
+        ]
+      },
+      {
+        "id": 10,
+        "question": "What is the sum of the interior angles of a regular heptagon?",
+        "image": "/images/quiz/quiz5_q10_question.jpg",
+        "correctAnswer": "a",
+        "correctAnswerExplanation": "To find the <b>sum of the interior angles</b> we will use the formula <b>(n-2)180</b>, whereas <b>n =7</b>, since <b>heptagons have 7 sides.<br>=(7-2)180<br>=(5)180<br>=900</b> <br> Therefore, <b>the sum of the interior angles of a regular heptagon is 900 degrees</b>.",
+        "correctAnswerExplanationImage": "/images/quiz/quiz5_q10_explanation.jpg",
+        "choices": [
+          {"id": "a", "value": "900 degrees"},
+          {"id": "b", "value": "1080 degrees"},
+          {"id": "c", "value": "1260 degrees"},
+          {"id": "d", "value": "1440 degrees"}
         ]
       }
     ]
