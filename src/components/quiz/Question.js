@@ -152,6 +152,10 @@ export default function Question() {
             let choiceBorderColor = "#4298b4";
             let hoverBackgroundColor = "#d9eaf0";
             let hoverBorderColor = "#4298b4";
+            let choiceFontSize = "14px";
+            if (state.currentQuestion.longChoices !== undefined && state.currentQuestion.longChoices === true) {
+              choiceFontSize = "11px";
+            }
 
             if (state.answerSubmitted) {
               choiceCursor = "default";
@@ -184,6 +188,7 @@ export default function Question() {
                   sx={{
                     position: "relative",
                     minWidth: 230,
+                    minHeight: 40,
                     borderRadius: 20,
                     borderWidth: 2,
                     color: choiceColor,
@@ -194,6 +199,7 @@ export default function Question() {
                       backgroundColor: hoverBackgroundColor,
                       borderColor: hoverBorderColor,
                     },
+                    fontSize: choiceFontSize
                   }}
                 >
                   {choice.id}: {choice.value}

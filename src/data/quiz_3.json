@@ -19,11 +19,11 @@
       },
       {
         "id": 2,
-        "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque?",
-        "image": "/images/placeholder_600x200.png",
+        "question": "Aliquam",
+        "image": "/images/quiz/quizX_qY_question.jpg",
         "correctAnswer": "a",
-        "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.",
-        "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
+        "correctAnswerExplanation": "Praesent",
+        "correctAnswerExplanationImage": "/images/quiz/quizX_qY_explanation.jpg",
         "choices" : [
           {"id": "a", "value":"Aliquet"},
           {"id": "b", "value":"Tincidunt"},

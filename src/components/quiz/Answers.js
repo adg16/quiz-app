@@ -85,8 +85,7 @@ const Answers = () => {
                 />
               )}
 
-              <Typography variant="body2" sx={{mt: 3, mb: 4 }}>
-                {/* {question.correctAnswerExplanation} */}
+              <Typography variant="body2" sx={{mt: 3, mb: 4 }} component="div">
                 <div dangerouslySetInnerHTML={{ __html: question.correctAnswerExplanation }} />
               </Typography>
             </Box>

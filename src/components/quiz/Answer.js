@@ -28,7 +28,7 @@ const Answer = React.forwardRef(function (props, ref) {
         />
       )}
 
-      <Typography variant="body2" sx={{ mt: 3, mb: 4 }}>
+      <Typography variant="body2" sx={{ mt: 3, mb: 4 }} component="div">
         <div dangerouslySetInnerHTML={{ __html: state.currentQuestion.correctAnswerExplanation }} />
       </Typography>
     </div>

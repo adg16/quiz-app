@@ -5,30 +5,143 @@
     "questions": [
       {
         "id": 1,
-        "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque? Q2-1",
-        "image": "/images/placeholder_600x200.png",
+        "question": "What is the sum of the interior angles in a convex nonagon?",
+        "image": "/images/quiz/quiz2_q1_question.jpg",
         "correctAnswer": "a",
-        "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.Q2-1",
-        "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
+        "correctAnswerExplanation": "Use the formula <b>(n-2)180</b> to calculate the sum of the interior angles. Since a nonagon has 9 sides, <b>we get (9-2)180 = (7)180 = 1,260, hence the sum of the interior angles of a convex nonagon is 1,260 degrees</b>.",
+        "correctAnswerExplanationImage": "/images/quiz/quiz2_q1_explanation.jpg",
         "choices" : [
-          {"id": "a", "value":"Aliquet"},
-          {"id": "b", "value":"Tincidunt"},
-          {"id": "c", "value":"Justo"},
-          {"id": "d", "value":"Sodales"}
+          {"id": "a", "value":"1260 degrees"},
+          {"id": "b", "value":"1350 degrees"},
+          {"id": "c", "value":"1440 degrees"},
+          {"id": "d", "value":"1620 degrees"}
         ]
       },
       {
         "id": 2,
-        "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque?Q2-2",
-        "image": "/images/placeholder_600x200.png",
+        "question": "In a parallelogram, what is the relationship between opposite angles?",
+        "image": null,
         "correctAnswer": "a",
-        "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.Q2-2",
-        "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
+        "correctAnswerExplanation": "<b>Based on the theorems about parallelograms, opposite angles of a parallelogram are equal.<b>",
+        "correctAnswerExplanationImage": null,
+        "longChoices": true,
         "choices" : [
-          {"id": "a", "value":"Aliquet"},
-          {"id": "b", "value":"Tincidunt"},
-          {"id": "c", "value":"Justo"},
-          {"id": "d", "value":"Sodales"}
+          {"id": "a", "value":"They are equal    "},
+          {"id": "b", "value":"They add up to 90 degrees"},
+          {"id": "c", "value":"They add up to 180 degrees"},
+          {"id": "d", "value":"They are complementary"}
+        ]
+      },
+      {
+        "id": 3,
+        "question": "What is the measure of each interior angle in a regular heptagon?",
+        "image": "/images/quiz/quiz2_q3_question.jpg",
+        "correctAnswer": "b",
+        "correctAnswerExplanation": "In finding out the measure of each interior angle we will use the formula <b>(n-2)180</b> all over n. Since a heptagon has 7 sides, then <b>n=7</b>.<br><b>(7-2)180 all over 7</b><br><b>=> (5)180 divided by 7</b><br><b>=> 900 divided by 7=128.57</b><br><b>Therefore the answer is 128.57 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz2_q3_explanation.jpg",
+        "choices": [
+          {"id": "a", "value":"120 degrees"},
+          {"id": "b", "value":"128.57 degrees"},
+          {"id": "c", "value":"135 degrees"},
+          {"id": "d", "value":"140 degrees"}
+        ]
+      },
+      {
+        "id": 4,
+        "question": "If a polygon has 20 sides, what is the sum of its exterior angles?",
+        "image": "/images/quiz/quiz2_q4_question.jpg",
+        "correctAnswer": "b",
+        "correctAnswerExplanation": "<b>The exterior angles of all polygons have a sum of 360 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz2_q4_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"180 degrees"},
+          {"id": "b", "value":"360 degrees"},
+          {"id": "c", "value":"720 degrees"},
+          {"id": "d", "value":"1440 degrees"}
+        ]
+      },
+      {
+        "id": 5,
+        "question": "What is the sum of the interior angles in a concave hexagon?",
+        "image": null,
+        "correctAnswer": "a",
+        "correctAnswerExplanation": "To solve for the sum of interior angles, use the formula <b>(n-2) 180</b> <br> <b>n = 6</b>, so… <br> <b>=>(6-2)180</b> <br> <b>=>(4)180</b> <br> <b>=> 720</b> <br> <b>Therefore, the sum of a concave hexagon is 720 degrees.</b>",
+        "correctAnswerExplanationImage": null,
+        "choices": [
+          {"id": "a", "value":"720 degrees"},
+          {"id": "b", "value":"900 degrees"},
+          {"id": "c", "value":"1080 degrees"},
+          {"id": "d", "value":"1260 degrees"}
+        ]
+      },
+      {
+        "id": 6,
+        "question": "How many sides does a hexagon have?",
+        "image": null,
+        "correctAnswer": "b",
+        "correctAnswerExplanation": "Many of our words in math hearken back to the Greek, and hexagon is no exception. The idea of a <b>six-sided figure comes from the Greek “hexagonon”, with gonia meaning “angle”</b>, which makes sense, as a hexagon not only has 6 sides, but six angles, or vertices.",
+        "correctAnswerExplanationImage": "/images/quiz/quiz2_q6_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"4"},
+          {"id": "b", "value":"6"},
+          {"id": "c", "value":"8"},
+          {"id": "d", "value":"10"}
+        ]
+      },
+      {
+        "id": 7,
+        "question": "What is the sum of the interior angles of a scalene?",
+        "image": "/images/quiz/quiz2_q7_question.jpg",
+        "correctAnswer": "c",
+        "correctAnswerExplanation": "A scalene has 3 sides and to find out the sum of the interior angles, we will use <b>(n-2)180</b> so we will substitute <b>n=3</b> <br> <b>(n-2)180</b> <br> <b>=>(3-2)180</b> <br> <b>=>(1)180</b> <br> <b>=180 therefore the sum of the interior angles of a scalene is 180 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz2_q7_explanation.jpg",
+        "choices": [
+          {"id": "a", "value":"90 degrees"},
+          {"id": "b", "value":"120 degrees"},
+          {"id": "c", "value":"180 degrees"},
+          {"id": "d", "value":"360 degrees"}
+        ]
+      },
+      {
+        "id": 8,
+        "question": "What type of polygon has all sides and angles equal?",
+        "image": null,
+        "correctAnswer": "a",
+        "correctAnswerExplanation": "Scalenes have no equal sides.<br>Isosceles only has 2 equal sides.<br>Right triangles have one right angle (90 degrees), so it is impossible to share 180 degrees equally.<br> <b>From the word equal, comes the word “equilateral”.</b>",
+        "correctAnswerExplanationImage": null,
+        "choices": [
+          {"id": "a", "value":"Equilateral"},
+          {"id": "b", "value":"Scalene"},
+          {"id": "c", "value":"Isosceles"},
+          {"id": "d", "value":"Right"}
+        ]
+      },
+      {
+        "id": 9,
+        "question": "What is the sum of the interior angles of a pentagon?",
+        "image": "/images/quiz/quiz2_q9_question.jpg",
+        "correctAnswer": "c",
+        "correctAnswerExplanation": "In finding the sum of the interior we will use the formula <b>(n-2)180</b>. Since a pentagon has 5 sides, then <b>n=5</b> <br> <b>=>(5-2)180</b> <br> <b>=>(3)180</b> <br> <b>=>540</b> <br> <b>Therefore the answer is 540 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz2_q9_explanation.jpg",
+        "choices": [
+          {"id": "a", "value":"180 degrees"},
+          {"id": "b", "value":"360 degrees"},
+          {"id": "c", "value":"540 degrees"},
+          {"id": "d", "value":"720 degrees"}
+        ]
+      },
+      {
+        "id": 10,
+        "question": "In a parallelogram, adjacent angles are:",
+        "image": null,
+        "correctAnswer": "b",
+        "correctAnswerExplanation": "<b>Based on theorems about parallelograms, adjacent angles are supplementary.</b>",
+        "correctAnswerExplanationImage": null,
+        "choices" : [
+          {"id": "a", "value":"Congruent"},
+          {"id": "b", "value":"Supplementary"},
+          {"id": "c", "value":"Complementary"},
+          {"id": "d", "value":"Equal"}
         ]
       }
     ]
