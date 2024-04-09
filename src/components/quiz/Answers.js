@@ -46,8 +46,8 @@ const Answers = () => {
                   image={question.image}
                   alt="Answer"
                   sx={{
-                    mt: { xs: "-40px", md: "16px" },
-                    mb: { xs: "-50px", md: "16px" },
+                    mt: { xs: "6px", md: "16px" },
+                    mb: { xs: "8px", md: "16px" },
                     objectFit: "contain",
                   }}
                 />
@@ -78,15 +78,16 @@ const Answers = () => {
                   image={question.correctAnswerExplanationImage}
                   alt="Answer"
                   sx={{
-                    mt: { xs: "-40px", md: "16px" },
-                    mb: { xs: "-50px", md: "16px" },
+                    mt: { xs: "6", md: "16px" },
+                    mb: { xs: "-6px", md: "16px" },
                     objectFit: "contain",
                   }}
                 />
               )}
 
-              <Typography variant="body2" sx={{ mt: 3, mb: 4 }}>
-                {question.correctAnswerExplanation}
+              <Typography variant="body2" sx={{mt: 3, mb: 4 }}>
+                {/* {question.correctAnswerExplanation} */}
+                <div dangerouslySetInnerHTML={{ __html: question.correctAnswerExplanation }} />
               </Typography>
             </Box>
           );

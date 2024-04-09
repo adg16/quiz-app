@@ -1,7 +1,7 @@
 {
     "id": 3,
-    "title": "Quiz Number Three",
-    "description": "Quiz number three description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque. Aliquam ut luctus mauris. Ut nisl magna, ultricies quis libero in, aliquam sodales eros.",
+    "title": "Quiz #3",
+    "description": null,
     "questions": [
       {
         "id": 1,

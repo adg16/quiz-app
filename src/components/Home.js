@@ -31,7 +31,7 @@ export default function Home() {
                 Hello,
               </Typography>
               <Typography variant="h2" sx={{ color: "primary.greyDarker" }}>
-                welcome to mQuiz!
+                welcome to Polyquiz!
               </Typography>
             </Box>
             <Box
@@ -42,12 +42,12 @@ export default function Home() {
               }}
             >
               <Typography variant="body">
-                Praesent gravida efficitur euismod. Vivamus justo nunc, dictum
-                gravida malesuada a, maximus ut nisl. Ut ac consequat nibh.
-                Praesent urna odio, pharetra tempus euismod vel, semper vel
-                nibh. Proin tempus vestibulum tellus sed accumsan. Maecenas in
-                dignissim ipsum, nec porttitor libero. Ut nec porta est. Cras
-                nec faucibus diam.
+                This website was developed as part of the Research III project
+                by <b>Alwien Jay M. Escame</b>, <b>Jorge Maxime D. Furton</b>, and <b>Maggie Viel
+                G. Porcado</b>. Through this game-style website, the researchers aim
+                to enhance a student’s knowledge of polygons, including how to
+                find their exterior and interior angles, determine their sides,
+                and solve problems involving them.
               </Typography>
             </Box>
             <Box sx={{ textAlign: "center" }}>

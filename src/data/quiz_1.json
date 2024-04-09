@@ -1,36 +1,147 @@
 {
-    "id": 1,
-    "title": "Quiz Number One",
-    "description": "Quiz number one description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque. Aliquam ut luctus mauris. Ut nisl magna, ultricies quis libero in, aliquam sodales eros. Q1-1.",
-    "questions": [
-      {
-        "id": 1,
-        "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque Q1-1?",
-        "image": "/images/placeholder_600x200.png",
-        "correctAnswer": "a",
-        "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque. Q1-1.",
-        "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
-        "choices" : [
-          {"id": "a", "value":"Aliquet"},
-          {"id": "b", "value":"Tincidunt"},
-          {"id": "c", "value":"Justo"},
-          {"id": "d", "value":"Sodales"}
-        ]
-      },
-      {
-        "id": 2,
-        "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque? Q1-2",
-        "image": null,
-        "correctAnswer": "a",
-        "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.Q1-2",
-        "correctAnswerExplanationImage": null,
-        "choices" : [
-          {"id": "a", "value":"Aliquet"},
-          {"id": "b", "value":"Tincidunt"},
-          {"id": "c", "value":"Justo"},
-          {"id": "d", "value":"Sodales"}
-        ]
-      }
-    ]
-  }
-  
+  "id": 1,
+  "title": "Quiz #1",
+  "description": null,
+  "questions": [
+    {
+      "id": 1,
+      "question": "If the sum of the interior angles of a polygon is 540 degrees, what type of polygon is it?",
+      "image": null,
+      "correctAnswer": "c",
+      "correctAnswerExplanation": "Solve by using the equation to get the sum of interior angles. <br><b>(n-2)180=540</b><br> Multiply (n-2) and 180 with the distribution property. <br> <b>180n-360 = 540</b> <br> Apply addition property of equality/transpose. <br> <b>180n - 360 + 360 = 540 + 360</b> <br> <b>180n = 900</b> <br> Divide both sides by 180 to get the value of n. <br> <b>180n/180=900/180</b> <br> <b>n=5</b> <br> Meaning, the polygon has 5 sides and therefore it is a pentagon!",
+      "correctAnswerExplanationImage": "/images/quiz/quiz1_q1_explanation.jpg",
+      "choices": [
+        {"id": "a", "value": "Triangle"},
+        {"id": "b", "value": "Square"},
+        {"id": "c", "value": "Pentagon"},
+        {"id": "d", "value": "Rectangle"}
+      ]
+    },
+    {
+      "id": 2,
+      "question": "A polygon has 8 sides. How many degrees are in each interior angle?",
+      "image": "/images/quiz/quiz1_q2_question.jpg",
+      "correctAnswer": "d",
+      "correctAnswerExplanation": "In finding out the measure of each interior angle we will use the formula <b>(n-2)180/n</b> <br> <b>n=8</b>, therefore <b>(8-2)180/8= (6)180/8= 1,080/8=135</b>, so the answer will be <b>135 degrees</b>.",
+      "correctAnswerExplanationImage": "/images/quiz/quiz1_q2_explanation.jpg",
+      "choices": [
+        {"id": "a", "value": "45 degrees"},
+        {"id": "b", "value": "90 degrees"},
+        {"id": "c", "value": "120 degrees"},
+        {"id": "d", "value": "135 degrees"}
+      ]
+    },
+    {
+      "id": 3,
+      "question": "A gardener is trimming a triangle-shaped bush. The gardener needs to make the bush's area 20 meters with a height of 4 meters. What should the measure of the bush's base be?",
+      "image": "/images/quiz/quiz1_q3_question.jpg",
+      "correctAnswer": "b",
+      "correctAnswerExplanation": "We know that the area of a triangle is <b>½(base x height). ½(bh) = area</b>. So if we substitute the given values: <br> <b>½(base x 4) = 20.</b> <br> Multiply both sides of the equation by 2 to remove ½ <br> <b>2 (½(b x 4) = 2 (20)</b> <br> <b>4b = 40</b> <br> Now, we divide both sides by 4 to get the base's value <br> <b>4b/4 = 40/4</b> <br> <b>b = 10</b> <br> Therefore, the <b>base of the bush should be 10</b>.",
+      "correctAnswerExplanationImage": "/images/quiz/quiz1_q3_explanation.jpg",
+      "choices": [
+        { "id": "a", "value": "6 meters" },
+        { "id": "b", "value": "10 meters" },
+        { "id": "c", "value": "5 meters" },
+        { "id": "d", "value": "12 meters" }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What type of polygon has all interior angles equal and all sides equal?",
+      "image": "/images/quiz/quiz1_q4_question.jpg",
+      "correctAnswer": "d",
+      "correctAnswerExplanation": "Isosceles triangles only have 2 equal angles and sides. <br> Rectangles aren't always equal in sides and angles. <br> Scalenes are triangles with no equal sides and angles. <br> <b>Only regular hexagons have all interior angles and sides equal.</b>",
+      "correctAnswerExplanationImage": "/images/quiz/quiz1_q4_explanation.jpg",
+      "choices": [
+        { "id": "a", "value": "Isosceles Triangle" },
+        { "id": "b", "value": "Rectangle" },
+        { "id": "c", "value": "Scalene Triangle" },
+        { "id": "d", "value": "Regular hexagon" }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "If a polygon has 12 sides, what is the sum of its interior angles?",
+      "image": "/images/quiz/quiz1_q5_question.jpg",
+      "correctAnswer": "c",
+      "correctAnswerExplanation": "The formula in finding the sum of interior angles is <b>(n-2)180</b> <br> And <b>n=12</b>, so… <br> <b>(12-2) 180 = (10)180 = 1,800</b> <br> <b>So the answer will be 1800 degrees.</b>",
+      "correctAnswerExplanationImage": "/images/quiz/quiz1_q5_explanation.jpg",
+      "choices": [
+        {"id": "a", "value":"1440 degrees"},
+        {"id": "b", "value":"1620 degrees"},
+        {"id": "c", "value":"1800 degrees"},
+        {"id": "d", "value":"1980 degrees"}
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Erning is planning to create a flowerbed in her garden in the shape of a regular pentagon. If each side of the flowerbed measures 2 meters, how much fencing material does he need to enclose the entire flowerbed?",
+      "image": "/images/quiz/quiz1_q6_question.jpg",
+      "correctAnswer": "c",
+      "correctAnswerExplanation": "Erning plans to enclose the pentagon garden with fences, thus he is looking for the <b>pentagon's perimeter</b>. <br> To get the perimeter of a polygon, <b>add every side</b>. <br> <b>Pentagons have 5 sides and each side has a value of 2 meters based on the given.</b> <br> So… <br> <b>5 x 2 = 10</b> <br> <b>Therefore, Erning needs 10 meters of fencing material to enclose the entire flower bed.</b>",
+      "correctAnswerExplanationImage": "/images/quiz/quiz1_q6_explanation.jpg",
+      "choices": [
+        {"id": "a", "value":"7 meters"},
+        {"id": "b", "value":"5 meters"},
+        {"id": "c", "value":"10 meters"},
+        {"id": "d", "value":"8 meters"}
+      ]
+    },
+    {
+      "id": 7,
+      "question": "What is the exterior angle of a regular pentagon?",
+      "image": "/images/quiz/quiz1_q7_question.jpg",
+      "correctAnswer": "c",
+      "correctAnswerExplanation": "The sum of all exterior angles in a polygon is <b>360 degrees</b>, so in order to find out the measure of the exterior angle we will divide 360 by the number of sides, since pentagon has 5 sides <b>we will divide 360 by 5; 360/5= 72. So the answer will be 72 degrees</b>.",
+      "correctAnswerExplanationImage": "/images/quiz/quiz1_q7_explanation.jpg",
+      "choices" : [
+        {"id": "a", "value":"36 degrees"},
+        {"id": "b", "value":"45 degrees"},
+        {"id": "c", "value":"72 degrees"},
+        {"id": "d", "value":"90 degrees"}
+      ]
+    },
+    {
+      "id": 8,
+      "question": "How many sides does a polygon have if the sum of its interior angles is 900 degrees?",
+      "image": null,
+      "correctAnswer": "c",
+      "correctAnswerExplanation": "<b>(n-2)180 = 900</b> <br> =>180-360 = 900 <b>(combine like terms and apply addition property of equality)</b> =>180n-360+360=900+360 <br>=>180n= 1260<br>=> <b>(divide both sides by 180)</b> 180n/180=1,260/180<br>=><b>n=7, therefore the number of sides is 7.</b>",
+      "correctAnswerExplanationImage": "/images/quiz/quiz1_q8_explanation.jpg",
+      "choices": [
+        {"id": "a", "value":"5"},
+        {"id": "b", "value":"6"},
+        {"id": "c", "value":"7"},
+        {"id": "d", "value":"8"}
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What is the measure of each interior angle in a regular octagon?",
+      "image": "/images/quiz/quiz1_q9_question.jpg",
+      "correctAnswer": "b",
+      "correctAnswerExplanation": "To find out the measure of each interior angle, we will use the formula <b>(n-2)180/n</b> <br><br>Since octagon has 8 sides then <b>n=8</b> <br> <b>(8-2)180/8 = (6)180/8 = 1,080/8= 135, therefore the answer will be 135 degrees.<b>",
+      "correctAnswerExplanationImage": "/images/quiz/quiz1_q9_explanation.jpg",
+      "choices": [
+        {"id": "a", "value":"120 degrees"},
+        {"id": "b", "value":"135 degrees"},
+        {"id": "c", "value":"140 degrees"},
+        {"id": "d", "value":"160 degrees"}
+      ]
+    },
+    {
+      "id": 10,
+      "question": "In an equilateral triangle, what is the measure of each interior angle?",
+      "image": "/images/quiz/quiz1_q10_question.jpg",
+      "correctAnswer": "b",
+      "correctAnswerExplanation": "Since an equilateral triangle has congruent sides and we are looking for the measure of each interior angle, we will use the formula <b>(n-2)180</b> all over n. <br>A triangle has 3 sides, so, we will use the formula <b>(3-2)180 all over 3</b>. <br> <b>(3-2)180 = 180</b> <br> <b>180 / 3 = 60</b> <br> <b>So the answer is 60 degrees.</b>",
+      "correctAnswerExplanationImage": "/images/quiz/quiz1_q10_explanation.jpg",
+      "choices": [
+        {"id": "a", "value":"45 degrees"},
+        {"id": "b", "value":"60 degrees"},
+        {"id": "c", "value":"90 degrees"},
+        {"id": "d", "value":"180 degrees"}
+      ]
+    }
+  ]
+}

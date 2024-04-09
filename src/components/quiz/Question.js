@@ -124,8 +124,8 @@ export default function Question() {
           image={state.currentQuestion.image}
           alt="Question"
           sx={{
-            mt: { xs: "-40px", md: "16px" },
-            mb: { xs: "-50px", md: "16px" },
+            mt: { xs: "6px", md: "16px" },
+            mb: { xs: "-6px", md: "16px" },
             objectFit: "contain",
           }}
         />

@@ -14,6 +14,7 @@ import IconButton from "@mui/material/IconButton";
 import quiz1 from "#data/quiz_1.json";
 import quiz2 from "#data/quiz_2.json";
 import quiz3 from "#data/quiz_3.json";
+import Grid from "@mui/material/Grid";
 
 export default function QuizList() {
   const { dispatch } = useQuizContext();
@@ -55,7 +56,7 @@ export default function QuizList() {
       >
         <HomeIcon sx={{ color: "#fff", fontSize: "40px" }} />
       </IconButton>
-      <Container maxWidth={false}>
+      <Container maxWidth="md">
         <Box
           sx={{
             textAlign: "center",
@@ -74,40 +75,40 @@ export default function QuizList() {
             Available Quizzes
           </Typography>
         </Box>
-        <Box sx={{ textAlign: "center", paddingBottom: 5 }}>
+        <Grid container spacing={3} justifyContent="center">
           {quizzes.map((quiz) => (
-            <Card
-              elevation={10}
-              sx={{
-                display: "inline-block",
-                maxWidth: 800,
-                ml: "auto",
-                mb: 3,
-                p: 1,
-                ":hover": {
-                  boxShadow: 20,
-                },
-              }}
-              key={quiz.id}
-            >
-              <CardActionArea onClick={() => startTheQuiz(quiz)} sx={{}}>
-                <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant="h5"
-                    component="div"
-                    sx={{ color: "primary.main" }}
-                  >
-                    {quiz.title}
-                  </Typography>
-                  <Typography variant="body2" sx={{ fontStyle: "italic" }}>
-                    {quiz.description}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
+            <Grid item key={quiz.id} xs={12} sm={12}>
+              <Card
+                elevation={10}
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  ":hover": {
+                    boxShadow: 20,
+                  },
+                }}
+              >
+                <CardActionArea onClick={() => startTheQuiz(quiz)}>
+                  <CardContent>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      sx={{ color: "primary.main", textAlign: "center" }}
+                    >
+                      {quiz.title}
+                    </Typography>
+                    <Typography variant="body2" sx={{ fontStyle: "italic", textAlign: "center" }}>
+                      {quiz.description}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
           ))}
-        </Box>
+        </Grid>
       </Container>
     </React.Fragment>
   );

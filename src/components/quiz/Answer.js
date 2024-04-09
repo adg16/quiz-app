@@ -21,15 +21,15 @@ const Answer = React.forwardRef(function (props, ref) {
           image={state.currentQuestion.correctAnswerExplanationImage}
           alt="Answer"
           sx={{
-            mt: { xs: "-40px", md: "16px" },
-            mb: { xs: "-50px", md: "16px" },
+            mt: { xs: "6px", md: "16px" },
+            mb: { xs: "-6px", md: "16px" },
             objectFit: "contain",
           }}
         />
       )}
 
       <Typography variant="body2" sx={{ mt: 3, mb: 4 }}>
-        {state.currentQuestion.correctAnswerExplanation}
+        <div dangerouslySetInnerHTML={{ __html: state.currentQuestion.correctAnswerExplanation }} />
       </Typography>
     </div>
   );
