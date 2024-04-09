@@ -93,7 +93,7 @@ export default function Question() {
             "&:hover": {
               backgroundColor: "primary.mainDark",
               borderColor: "primary.mainDark",
-            },
+            }
           }}
           endIcon={<ArrowForwardIosIcon />}
         >
@@ -199,7 +199,8 @@ export default function Question() {
                       backgroundColor: hoverBackgroundColor,
                       borderColor: hoverBorderColor,
                     },
-                    fontSize: choiceFontSize
+                    fontSize: choiceFontSize,
+                    textTransform: "none"
                   }}
                 >
                   {choice.id}: {choice.value}

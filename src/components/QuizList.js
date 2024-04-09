@@ -98,7 +98,7 @@ export default function QuizList() {
                       gutterBottom
                       variant="h5"
                       component="div"
-                      sx={{ color: "primary.main", textAlign: "center" }}
+                      sx={{ color: "primary.main", textAlign: "center", fontSize: "25px" }}
                     >
                       {quiz.title}
                     </Typography>
