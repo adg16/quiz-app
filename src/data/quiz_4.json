@@ -19,16 +19,128 @@
       },
       {
         "id": 2,
-        "question": "Aliquam",
-        "image": "/images/quiz/quizX_qY_question.jpg",
+        "question": "If all the interior angles of a regular polygon measure 120 degrees, how many sides does it have?",
+        "image": null,
         "correctAnswer": "a",
-        "correctAnswerExplanation": "Praesent",
-        "correctAnswerExplanationImage": "/images/quiz/quizX_qY_explanation.jpg",
+        "correctAnswerExplanation": "<b>In a regular polygon, all interior angles are equal.</b> If each interior angle measure 120 degrees, then we can use the formula for finding the interior angle of a regular polygon: <br> <b>Interior angle = (n-2) 180 / n</b> <br> Whereas <b>n = number of sides of the polygon<br>Given that the interior angle is 120 degrees:<br>120 = (n-2) 180 / n<br>Now, solve for n:<br>120n = 180n - 360<br>360 = 180n -120n<br>360 = 60n<br>n = 360/60<br>n = 6</b> <br>So, <b>the polygon has 6 sides.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz4_q2_explanation.jpg",
+        "choices": [
+          {"id": "a", "value":"6"},
+          {"id": "b", "value":"7"},
+          {"id": "c", "value":"8"},
+          {"id": "d", "value":"9"}
+        ]
+      },
+      {
+        "id": 3,
+        "question": "What is the measure of each interior angle of a regular octagon?",
+        "image": "/images/quiz/quiz4_q3_question.jpg",
+        "correctAnswer": "b",
+        "correctAnswerExplanation": "To find out the <b>measure of each interior angle of a regular octagon</b> we will use the formula <b>(n-2)180/n</b>, since an <b>octagon has 8 sides then n=8.<br>(n-2)180/n<br>=(8-2)180/8<br>=(6)180/8<br>=1,080/8<br>= 135 degrees</b> <br> Therefore, <b>the measure of each interior angle of a regular octagon is 135 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz4_q3_explanation.jpg",
+        "choices": [
+          {"id": "a", "value":"120 degrees "},
+          {"id": "b", "value":"135 degrees"},
+          {"id": "c", "value":"140 degrees"},
+          {"id": "d", "value":"180 degrees"}
+        ]
+      },
+      {
+        "id": 4,
+        "question": "What is the sum of the measures of the interior angles of a regular dodecagon?",
+        "image": "/images/quiz/quiz4_q4_question.jpg",
+        "correctAnswer": "b",
+        "correctAnswerExplanation": "Use the formula <b>(n-2)180</b>, whereas <b>n = number of sides <br>=(12-2)180<br>=(10)180<br>=1800</b> <br> Therefore, the <b>interior angles of a regular dodecagon add up to 1800 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz4_q4_explanation.jpg",
+        "choices": [
+          {"id": "a", "value":"1440 degrees"},
+          {"id": "b", "value":"1800 degrees"},
+          {"id": "c", "value":"1980 degrees"},
+          {"id": "d", "value":"2160 degrees"}
+        ]
+      },
+      {
+        "id": 5,
+        "question": "How many sides does a decagon have?",
+        "image": null,
+        "correctAnswer": "d",
+        "correctAnswerExplanation": "<b>Decagons have 10 sides.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz4_q5_explanation.jpg",
         "choices" : [
-          {"id": "a", "value":"Aliquet"},
-          {"id": "b", "value":"Tincidunt"},
-          {"id": "c", "value":"Justo"},
-          {"id": "d", "value":"Sodales"}
+          {"id": "a", "value":"7"},
+          {"id": "b", "value":"8"},
+          {"id": "c", "value":"9"},
+          {"id": "d", "value":"10"}
+        ]
+      },
+      {
+        "id": 6,
+        "question": "What is the measure of the exterior angles of an equiangular triangle?",
+        "image": "/images/quiz/quiz4_q6_question.jpg",
+        "correctAnswer": "b",
+        "correctAnswerExplanation": "<b>In any polygon, including a triangle, the sum of the measure of the exterior angle is always 360 degrees.</b> <br> An <b>equiangular triangle has all angles equal, each measuring 60 degrees.</b> <br> Since a <b>triangle has three exterior angles</b>, we can <b>divide 360 by 3</b> to find the measure of each exterior angle. <br> <b>360 degrees / 3 = 120 degrees<br>So, each exterior angle of an equiangular triangle measures 120 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz4_q6_explanation.jpg",
+        "choices": [
+          {"id": "a", "value":"90 degrees"},
+          {"id": "b", "value":"120 degrees "},
+          {"id": "c", "value":"180 degrees"},
+          {"id": "d", "value":"360 degrees"}
+        ]
+      },
+      {
+        "id": 7,
+        "question": "A kite flyer is building a kite in the shape of a rhombus. If the length of one diagonal is 16 inches and the length of the other diagonal is 12 inches, what is the area of the kite?",
+        "image": "/images/quiz/quiz4_q7_question.jpg",
+        "correctAnswer": "c",
+        "correctAnswerExplanation": "To find the area of a kite, we can use the formula to find the area of a rhombus: <br> <b>Area = (diagonal1 x diagonal 2) / 2</b> <br>Given that the <b>length of one diagonal (diagonal1) is 16 inches</b> and the <b>length of the other diagonal (diagonal2) is 12 inches</b>, we can <b>substitute the values into the formula:<br>Area = (16 x 12) / 2<br> = (192) / 2<br> = 96 square inches</b> <br> So, <b>the area of the kite is 96 square inches</b>.",
+        "correctAnswerExplanationImage": "/images/quiz/quiz4_q7_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"192 inches"},
+          {"id": "b", "value":"56 inches"},
+          {"id": "c", "value":"96 inches"},
+          {"id": "d", "value":"84 inches"}
+        ]
+      },
+      {
+        "id": 8,
+        "question": "In a kite, the sum of interior angles is:",
+        "image": "/images/quiz/quiz4_q8_question.jpg",
+        "correctAnswer": "c",
+        "correctAnswerExplanation": "<b>Kite is a quadrilateral, so it has 4 sides.</b> Therefore <b>n = 4<br>Substitute n = 4 to (n-2)180:<br>=(4-2)180<br>=(2)180<br>=360</b> <br> Therefore, <b>the sum of the interior angles of a kite is 360 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz4_q8_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"180 degrees"},
+          {"id": "b", "value":"270 degrees"},
+          {"id": "c", "value":"360 degrees"},
+          {"id": "d", "value":"450 degrees"}
+        ]
+      },
+      {
+        "id": 9,
+        "question": "How many degrees are in each interior angle of a regular pentagon?",
+        "image": "/images/quiz/quiz4_q9_question.jpg",
+        "correctAnswer": "b",
+        "correctAnswerExplanation": "Use the formula <b>(n-2)180 / n</b>, whereas <b>n = 5</b> <br> <b>=(5-2)180 / 5<br>=(3)180 / 5<br>=540 / 5<br>=108</b> <br>Therefore, <b>the measure of an interior angle of a regular pentagon is 108 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz4_q9_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"90 degrees"},
+          {"id": "b", "value":"108 degrees"},
+          {"id": "c", "value":"120 degrees"},
+          {"id": "d", "value":"144 degrees"}
+        ]
+      },
+      {
+        "id": 10,
+        "question": "What is the measure of each exterior angle of a regular octagon?",
+        "image": "/images/quiz/quiz4_q10_question.jpg",
+        "correctAnswer": "a",
+        "correctAnswerExplanation": "Since <b>the sum of the exterior angle of a polygon is 360 degrees</b> and <b>the number of sides is 8</b>, then we will just have to <b>divide 360 by 8</b>. <br> <b>360/8= 45 degrees</b> <br> Therefore, <b>the measure of each exterior angle of a regular octagon is 45 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz4_q10_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"45 degrees"},
+          {"id": "b", "value":"60 degrees"},
+          {"id": "c", "value":"90 degrees"},
+          {"id": "d", "value":"135 degrees"}
         ]
       }
     ]
