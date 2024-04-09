@@ -1,0 +1,36 @@
+{
+    "id": 5,
+    "title": "Quiz #5",
+    "description": null,
+    "questions": [
+      {
+        "id": 1,
+        "question": "Aliquam",
+        "image": "/images/quiz/quizX_qY_question.jpg",
+        "correctAnswer": "a",
+        "correctAnswerExplanation": "Praesent",
+        "correctAnswerExplanationImage": "/images/quiz/quizX_qY_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"Aliquet"},
+          {"id": "b", "value":"Tincidunt"},
+          {"id": "c", "value":"Justo"},
+          {"id": "d", "value":"Sodales"}
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Aliquam",
+        "image": "/images/quiz/quizX_qY_question.jpg",
+        "correctAnswer": "a",
+        "correctAnswerExplanation": "Praesent",
+        "correctAnswerExplanationImage": "/images/quiz/quizX_qY_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"Aliquet"},
+          {"id": "b", "value":"Tincidunt"},
+          {"id": "c", "value":"Justo"},
+          {"id": "d", "value":"Sodales"}
+        ]
+      }
+    ]
+  }
+  

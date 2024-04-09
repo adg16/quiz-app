@@ -1,0 +1,36 @@
+{
+    "id": 4,
+    "title": "Quiz #4",
+    "description": null,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the sum of the measures of the interior angles of a heptagon?",
+        "image": "/images/quiz/quiz4_q1_question.jpg",
+        "correctAnswer": "c",
+        "correctAnswerExplanation": "To get the <b>sum of interior angles of a polygon</b>, use the formula <b>(n-2)180</b>, where <b>n = no. of sides</b>. <br> =><b>(7-2)180</b> <br> =><b>(5)180</b> <br> =><b>900</b> <br>Therefore, <b>the sum of a heptagon’s interior angle is 900 degrees</b>.",
+        "correctAnswerExplanationImage": "/images/quiz/quiz4_q1_explanation.jpg",
+        "choices": [
+          {"id": "a", "value":"540 degrees"},
+          {"id": "b", "value":"720 degrees"},
+          {"id": "c", "value":"900 degrees"},
+          {"id": "d", "value":"1080 degrees"}
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Aliquam",
+        "image": "/images/quiz/quizX_qY_question.jpg",
+        "correctAnswer": "a",
+        "correctAnswerExplanation": "Praesent",
+        "correctAnswerExplanationImage": "/images/quiz/quizX_qY_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"Aliquet"},
+          {"id": "b", "value":"Tincidunt"},
+          {"id": "c", "value":"Justo"},
+          {"id": "d", "value":"Sodales"}
+        ]
+      }
+    ]
+  }
+  

@@ -5,30 +5,142 @@
     "questions": [
       {
         "id": 1,
-        "question": "Aliquam aliquet sodales erat, vel tincidunt risus volutpat ut. Sed at justo neque?",
-        "image": "/images/placeholder_600x200.png",
+        "question": "How many degrees are in the exterior angle of a regular octagon?",
+        "image": "/images/quiz/quiz3_q1_question.jpg",
         "correctAnswer": "a",
-        "correctAnswerExplanation": "Praesent tristique tellus nunc, non ornare felis vehicula eget. Integer in feugiat massa. Pellentesque ut auctor elit. Aliquam at facilisis felis, a imperdiet augue. Phasellus vitae nisl at quam commodo tincidunt nec ac neque.",
-        "correctAnswerExplanationImage": "/images/placeholder_600x200.png",
-        "choices" : [
-          {"id": "a", "value":"Aliquet"},
-          {"id": "b", "value":"Tincidunt"},
-          {"id": "c", "value":"Justo"},
-          {"id": "d", "value":"Sodales"}
+        "correctAnswerExplanation": "The exterior angles of all polygons have a sum of 360 degrees and since an octagon has 8 sides, we will just divide 360 by 8.<br>360/8= 45 degrees<br>Therefore, the measure of each interior angle of a regular octagon is 45 degrees.",
+        "correctAnswerExplanationImage": "/images/quiz/quiz3_q1_explanation.jpg",
+        "choices": [
+          {"id": "a", "value":"45"},
+          {"id": "b", "value":"60"},
+          {"id": "c", "value":"90"},
+          {"id": "d", "value":"120"}
         ]
       },
       {
         "id": 2,
-        "question": "Aliquam",
-        "image": "/images/quiz/quizX_qY_question.jpg",
-        "correctAnswer": "a",
-        "correctAnswerExplanation": "Praesent",
-        "correctAnswerExplanationImage": "/images/quiz/quizX_qY_explanation.jpg",
+        "question": "What is the measure of each interior angle of a regular pentagon?",
+        "image": "/images/quiz/quiz3_q2_question.jpg",
+        "correctAnswer": "b",
+        "correctAnswerExplanation": "<b>(n-2)180/n</b> Pentagons have 5 sides so n=5, <b>(5-2)180/5 = (3)180/5 = 540/5=108</b>. Therefore, <b>the answer is 108 degrees</b>.",
+        "correctAnswerExplanationImage": "/images/quiz/quiz3_q2_explanation.jpg",
         "choices" : [
-          {"id": "a", "value":"Aliquet"},
-          {"id": "b", "value":"Tincidunt"},
-          {"id": "c", "value":"Justo"},
-          {"id": "d", "value":"Sodales"}
+          {"id": "a", "value":"90 degrees"},
+          {"id": "b", "value":"108 degrees"},
+          {"id": "c", "value":"120 degrees"},
+          {"id": "d", "value":"144 degrees"}
+        ]
+      },
+      {
+        "id": 3,
+        "question": "How many sides does an octagon have?",
+        "image": null,
+        "correctAnswer": "c",
+        "correctAnswerExplanation": "<b>Just as OCTOpuses have 8 tentacles, OCTAgons also have 8 sides. In greek language , 'octa' means 8 and 'gon' means sides.<b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz3_q3_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"6"},
+          {"id": "b", "value":"7"},
+          {"id": "c", "value":"8"},
+          {"id": "d", "value":"9"}
+        ]
+      },
+      {
+        "id": 4,
+        "question": "What is the sum of the interior angles of a quadrilateral?",
+        "image": null,
+        "correctAnswer": "d",
+        "correctAnswerExplanation": "<b>(n-2)180</b> since a <b>quadrilateral has 4 sides then n=4, (4-2)180=> (2)180=360</b>, therefore <b>the sum of the interior angles of a quadrilateral is 360 degrees.</b>",
+        "correctAnswerExplanationImage": null,
+        "choices" : [
+          {"id": "a", "value":"90 degrees"},
+          {"id": "b", "value":"180 degrees"},
+          {"id": "c", "value":"270 degrees"},
+          {"id": "d", "value":"360 degrees"}
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Which of the following polygons has the least number of sides?",
+        "image": null,
+        "correctAnswer": "b",
+        "correctAnswerExplanation": "<b>A nonagon has 9 sides, a pentagon has 5 sides, a hexagon has 6 sides, and a quadrilateral has 4 sides. Therefore the polygon that has the least number of sides is a quadrilateral.</b>",
+        "correctAnswerExplanationImage": null,
+        "choices" : [
+          {"id": "a", "value":"Nonagon"},
+          {"id": "b", "value":"Quadrilateral"},
+          {"id": "c", "value":"Pentagon"},
+          {"id": "d", "value":"Hexagon"}
+        ]
+      },
+      {
+        "id": 6,
+        "question": "What is the sum of the measures of the exterior angles of a polygon with 13 sides?",
+        "image": "/images/quiz/quiz3_q6_question.jpg",
+        "correctAnswer": "d",
+        "correctAnswerExplanation": "<b>The exterior angles of  all polygons have a sum of 360 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz3_q6_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"90 degrees"},
+          {"id": "b", "value":"180 degrees"},
+          {"id": "c", "value":"270 degrees"},
+          {"id": "d", "value":"360 degrees"}
+        ]
+      },
+      {
+        "id": 7,
+        "question": "What is the measure of each exterior angle of a regular nonagon?",
+        "image": "/images/quiz/quiz3_q7_question.jpg",
+        "correctAnswer": "d",
+        "correctAnswerExplanation": "<b>The exterior angles of all polygons have a sum of 360 degrees. Divide that into 9 equal parts since nonagons have 9 sides<br>=>360/9<br>=>40</b> <br> Therefore, <b>the measure of an exterior angle of a regular nonagon is 40 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz3_q7_explanation.jpg",
+        "choices": [
+          {"id": "a", "value":"45 degrees"},
+          {"id": "b", "value":"54 degrees"},
+          {"id": "c", "value":"72 degrees"},
+          {"id": "d", "value":"40 degrees"}
+        ]
+      },
+      {
+        "id": 8,
+        "question": "What is the sum of the measures of the exterior angles of a regular octagon?",
+        "image": "/images/quiz/quiz3_q8_question.jpg",
+        "correctAnswer": "a",
+        "correctAnswerExplanation": "<b>The exterior angles of  all polygons have a sum of 360 degrees.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz3_q8_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"360 degrees"},
+          {"id": "b", "value":"540 degrees"},
+          {"id": "c", "value":"720 degrees"},
+          {"id": "d", "value":"1080 degrees"}
+        ]
+      },
+      {
+        "id": 9,
+        "question": "A polygon with 12 sides is called a:",
+        "image": null,
+        "correctAnswer": "c",
+        "correctAnswerExplanation": "An octagon has 8 sides, a decagon has 10, a nonagon has 9, and <b>a dodecagon has 12 sides</b>.",
+        "correctAnswerExplanationImage": "/images/quiz/quiz3_q9_explanation.jpg",
+        "choices" : [
+          {"id": "a", "value":"Octagon"},
+          {"id": "b", "value":"Decagon"},
+          {"id": "c", "value":"Dodecagon"},
+          {"id": "d", "value":"Nonagon"}
+        ]
+      },
+      {
+        "id": 10,
+        "question": "If a regular polygon has interior angles measuring 150 degrees, how many sides does it have?",
+        "image": null,
+        "correctAnswer": "d",
+        "correctAnswerExplanation": "In finding the <b>measure of each interior angle</b>, we will use the formula <b>(n-2)180/n</b> <br> <b>(n-2)180/n= 150</b> we will just have to <b>cross multiply</b> <br> =><b>(n-2)180= 150n distribute 180 to (n-2)</b> <br> => <b>180n-360= 150n, combine like terms</b> <br> => <b>180n-150n=360</b> <br> => 30n=360, <b>divide both sides by 30</b> <br>=> so n=12, therefore <b>if the measure of an interior angle is 150 then it has 12 sides.</b>",
+        "correctAnswerExplanationImage": "/images/quiz/quiz3_q10_explanation.jpg",
+        "choices": [
+          {"id": "a", "value":"6"},
+          {"id": "b", "value":"8"},
+          {"id": "c", "value":"10"},
+          {"id": "d", "value":"12"}
         ]
       }
     ]

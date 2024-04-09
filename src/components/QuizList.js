@@ -14,13 +14,14 @@ import IconButton from "@mui/material/IconButton";
 import quiz1 from "#data/quiz_1.json";
 import quiz2 from "#data/quiz_2.json";
 import quiz3 from "#data/quiz_3.json";
+import quiz4 from "#data/quiz_4.json";
 import Grid from "@mui/material/Grid";
 
 export default function QuizList() {
   const { dispatch } = useQuizContext();
   const navigate = useNavigate();
 
-  const quizzes = [quiz1, quiz2, quiz3];
+  const quizzes = [quiz1, quiz2, quiz3, quiz4];
 
   const goToHome = () => {
     navigate("/");
