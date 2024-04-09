@@ -248,7 +248,7 @@ export default function Question() {
                 isPlaying={!state.answerSubmitted}
                 size={70}
                 strokeWidth={4}
-                duration={10}
+                duration={60}
                 colors={["#33a474", "#F7B801", "#ff1919", "#FF0000"]}
                 colorsTime={[7, 5, 2, 0]}
                 onComplete={(totalElapsedTime) => submitAnswer("x")}
