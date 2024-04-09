@@ -31,7 +31,7 @@ export default function Home() {
                 Hello,
               </Typography>
               <Typography variant="h2" sx={{ color: "primary.greyDarker" }}>
-                welcome to Polyquiz!
+                welcome to PolyQuiz!
               </Typography>
             </Box>
             <Box
@@ -42,7 +42,7 @@ export default function Home() {
               }}
             >
               <Typography variant="body">
-                This website was developed as part of the Research III project
+                This website was developed as part of the <b>Research III</b> project
                 by <b>Alwien Jay M. Escame</b>, <b>Jorge Maxime D. Furton</b>, and <b>Maggie Viel
                 G. Porcado</b>. Through this game-style website, the researchers aim
                 to enhance a student’s knowledge of polygons, including how to
